@@ -44,9 +44,9 @@ export default function Footer() {
                     <li className={styles.block_element}>
                         <ChevronRight size={18} /><Link href="/category/organic-products">Organic Products</Link>
                     </li>
-                    <li className={styles.block_element}>
+                    {/* <li className={styles.block_element}>
                         <ChevronRight size={18} /><Link href="/category/non-gi-products">Non-GI Products</Link>
-                    </li>
+                    </li> */}
                 </ul>
                 <ul className={styles.block}>
                     <li className="mb-[15px] text-xl">

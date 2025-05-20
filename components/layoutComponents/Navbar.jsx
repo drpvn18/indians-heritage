@@ -56,9 +56,9 @@ export default function Navbar() {
                             <div className={`${activeCategory === "gi" && styles.active_category} ${styles.category_item}`} onMouseEnter={() => setActiveCategory("gi")}>
                                 GI Products
                             </div>
-                            <div className={`${activeCategory === "non-gi" && styles.active_category} ${styles.category_item}`} onMouseEnter={() => setActiveCategory("non-gi")}>
+                            {/* <div className={`${activeCategory === "non-gi" && styles.active_category} ${styles.category_item}`} onMouseEnter={() => setActiveCategory("non-gi")}>
                                 Non-GI Products
-                            </div>
+                            </div> */}
                             <div className={`${activeCategory === "organic" && styles.active_category} ${styles.category_item}`} onMouseEnter={() => setActiveCategory("organic")}>
                                 Organic Products
                             </div>
