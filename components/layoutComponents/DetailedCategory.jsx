@@ -27,7 +27,7 @@ export default function DetailedCategory({ dropdown_data }) {
                                 })
                             }
                             <li className={styles.block_element}>
-                                <Link href={category?.endpoint}>view all</Link>
+                                <Link href={`/category/${category?.endpoint}`}>view all</Link>
                             </li>
                         </ul>
                     );
