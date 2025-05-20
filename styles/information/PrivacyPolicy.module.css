@@ -1,0 +1,20 @@
+.container {
+    background-color: #f4f4f4;
+}
+
+.privacy_policy {
+    margin: 0 auto;
+    max-width: 1400px;
+    padding: 0 20px;
+}
+
+.privacy_policy_content {
+    padding: 0 0 50px 0;
+}
+
+.pageTitle {
+    text-align: center;
+    font-size: 32px;
+    font-weight: 500;
+    color: #EF5D29;
+}

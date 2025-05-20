@@ -1,0 +1,10 @@
+.container {
+    max-width: 1400px;
+    margin: auto;
+    padding: 40px 10px;
+}
+
+.product_cate {
+    width: 100%;
+    margin: 10px 0 100px 0;
+}

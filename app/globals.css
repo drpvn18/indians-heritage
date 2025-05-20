@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
+
+@import "tailwindcss";
+
+:root {
+	--scroll-color: #EB5E25;
+}
+
+body {
+	background-color: #F9F5F0;
+	font-family: "Lexend", sans-serif;
+}

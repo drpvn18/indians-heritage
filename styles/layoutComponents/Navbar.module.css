@@ -1,0 +1,134 @@
+.container {
+    width: 100%;
+    background-color: #2CA966;
+    height: 84px;
+}
+
+.navbar {
+    max-width: 1400px;
+    margin: auto;
+    padding: 0 15px;
+
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    gap: 30px;
+    align-items: center;
+
+    position: relative;
+}
+
+.categoryList {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    position: relative;
+}
+
+.categoryList .category_item {
+    cursor: pointer;
+    color: #E1F5EB;
+    font-weight: 500;
+    position: relative;
+}
+
+.category_item:after {
+    content: '';
+    width: 0px;
+    height: 2px;
+    display: block;
+    background: #E1F5EB;
+    transition: 400ms;
+}
+
+.active_category:after {
+    width: 100%;
+}
+
+.detailed_category {
+    position: absolute;
+    top: 84px;
+    left: 0;
+    right: 0;
+    border-radius: 0 0 10px 10px;
+    z-index: 999;
+    color: #000;
+    overflow-x: auto;
+    max-width: 1400px;
+    width: 100%;
+}
+
+.detailed_category::-webkit-scrollbar {
+    width: 0px;
+    height: 5px;
+}
+
+.detailed_category::-webkit-scrollbar-thumb {
+    border-radius: 20px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+    background-color: var(--scroll-color);
+    cursor: pointer;
+}
+
+.detailed_category::-webkit-scrollbar-track {
+    border-radius: 30px;
+}
+
+.detailed_category_container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    gap: 20px;
+    background-color: #FFFFFF;
+    width: min-content;
+    padding: 20px 20px;
+    margin: auto auto 5px auto;
+    border-radius: 0 0 10px 10px;
+    box-shadow: 4px 4px 32px -16px #535353;
+}
+
+.block {
+    min-width: 125px;
+    margin: 10px 20px;
+}
+
+.block_element {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0px;
+    margin: 10px 0;
+    font-size: 14px;
+    font-weight: 500;
+    width: max-content;
+}
+
+.block_element a:after {
+    content: '';
+    width: 0px;
+    height: 2px;
+    display: block;
+    background: #000;
+    transition: 400ms;
+}
+
+.block_element a:hover:after {
+    width: 100%;
+}
+
+.menuItem{
+    display: none;
+    cursor: pointer;
+}
+
+@media (max-width:880px) {
+    .categoryList {
+        display: none;
+    }
+
+    .menuItem{
+        display: block;
+    }
+}

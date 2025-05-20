@@ -1,0 +1,695 @@
+[
+  {
+    "id": "1",
+    "name": "Beautiful Wooden Coloured 14 inch Bobbili Veena (Plain)",
+    "slug": "beautiful-wooden-coloured-14-inch-bobbili-veena-plain",
+    "description": "Bobbili is a town in the Vizianagaram district of the Indian state of Andhra Pradesh. Bobbili veena is a large plucked string instrument used in Carnatic classical music. The Veena is named after Bobbili, a place where it was invented. A Bobbili Veena is carved from a single piece of jack wood.",
+    "brand": "Pochampalli Ikat",
+    "product_type": {
+      "id": "gi",
+      "name": "GI Products",
+      "slug": "gi-products"
+    },
+    "category": {
+      "name": "Wooden Handcrafts",
+      "slug": "wood",
+      "image": "/images/categories/wood_handcrafts.avif"
+    },
+    "origin": {
+      "country": "ind",
+      "state": "AP",
+      "manufacturer": "NA",
+      "imported": false
+    },
+    "images": [
+      {
+        "url": "https://drive.google.com/uc?export=view&id=1_4hg5w3fWz1TpzYv_yYfCCDdPz7Sae_N",
+        "alt": "beautiful-wooden-coloured-14-inch-bobbili-veena-plain-1"
+      }
+    ],
+    "variation": {
+      "sku": "1",
+      "attributes": {
+        "size": "12 inch",
+        "color": "Black",
+        "material": "Jackfruit Wood"
+      },
+      "price": {
+        "currency": "EUR",
+        "amount": 48.3
+      },
+      "stock": {
+        "quantity": 100,
+        "in_stock": true
+      },
+      "weight_label": "1 Kg",
+      "absolute_weight": 1000,
+      "dimensions": {
+        "length": "14 inch",
+        "width": "10 inch",
+        "height": "20 cm"
+      },
+      "barcode": "NA",
+      "images": []
+    },
+    "discount": {
+      "type": "percentage",
+      "value": 10
+    },
+    "tags": ["wooden", "andhra", "Bobbili", "Veena"],
+    "status": "active",
+    "created_at": "NA",
+    "updated_at": "NA"
+  },
+  {
+    "id": "2",
+    "name": "Turmeric Powder",
+    "slug": "turmeric-powder",
+    "description": "Turmeric powder is a vibrant yellow spice made from dried and ground turmeric root, known for its earthy flavor and medicinal properties. It is widely used in cooking, skincare, and traditional medicine for its anti-inflammatory and antioxidant benefits.",
+    "brand": "Natural",
+    "product_type": {
+      "id": "organic",
+      "name": "Organic Products",
+      "slug": "organic-products"
+    },
+    "category": {
+      "name": "Spices",
+      "slug": "/spices",
+      "image": "/images/category/spices.avif"
+    },
+    "origin": {
+      "country": "ind",
+      "state": "NA",
+      "manufacturer": "NA",
+      "imported": false
+    },
+    "images": [
+      {
+        "url": "/images/products/turmeric-powder-1.webp",
+        "alt": "turmeric-powder-1"
+      },
+      {
+        "url": "/images/products/turmeric-powder-2.webp",
+        "alt": "turmeric-powder-2"
+      },
+      {
+        "url": "/images/products/turmeric-powder-3.webp",
+        "alt": "turmeric-powder-3"
+      }
+    ],
+    "variation": {
+      "sku": "1",
+      "attributes": {
+        "size": "NA",
+        "color": "Yellow",
+        "material": "Turmeric Plant (or) Curcuma longa plant"
+      },
+      "price": {
+        "currency": "EUR",
+        "amount": 0.52
+      },
+      "stock": {
+        "quantity": 100,
+        "in_stock": true
+      },
+      "weight_label": "100g",
+      "absolute_weight": 100,
+      "dimensions": {
+        "length": "NA",
+        "width": "NA",
+        "height": "NA"
+      },
+      "barcode": "NA",
+      "images": []
+    },
+    "discount": {
+      "type": "percentage",
+      "value": 0
+    },
+    "tags": ["turmeric", "healthy", "spices"],
+    "status": "active",
+    "created_at": "NA",
+    "updated_at": "NA"
+  },
+  {
+    "id": "3",
+    "name": "Onion",
+    "slug": "onion",
+    "description": "Onion is a widely used vegetable known for its strong flavor and aroma, forming the base of many savory dishes. It is rich in antioxidants and offers various health benefits, including anti-inflammatory properties.",
+    "brand": "Natural",
+    "product_type": {
+      "id": "organic",
+      "name": "Organic Products",
+      "slug": "organic-products"
+    },
+    "category": {
+      "name": "Vegetables",
+      "slug": "/vegetables",
+      "image": "/images/category/vegetables.avif"
+    },
+    "origin": {
+      "country": "ind",
+      "state": "NA",
+      "manufacturer": "NA",
+      "imported": false
+    },
+    "images": [
+      {
+        "url": "/images/products/red-onions-1.avif",
+        "alt": "red-onions-1"
+      }
+    ],
+    "variation": {
+      "sku": "1",
+      "attributes": {
+        "size": "NA",
+        "color": "Red",
+        "material": "NA"
+      },
+      "price": {
+        "currency": "EUR",
+        "amount": 0.14
+      },
+      "stock": {
+        "quantity": 100,
+        "in_stock": true
+      },
+      "weight_label": "500g",
+      "absolute_weight": 500,
+      "dimensions": {
+        "length": "NA",
+        "width": "NA",
+        "height": "NA"
+      },
+      "barcode": "NA",
+      "images": []
+    },
+    "discount": {
+      "type": "percentage",
+      "value": 0
+    },
+    "tags": ["onion", "healthy", "vegetables"],
+    "status": "active",
+    "created_at": "NA",
+    "updated_at": "NA"
+  },
+  {
+    "id": "4",
+    "name": "Fox nut (Makhana)",
+    "slug": "fox-nut-makhana",
+    "description": "Makhana, also known as fox nuts or lotus seeds, are edible seeds harvested from the Euryale ferox plant found in water bodies. They are a healthy snack, rich in protein, fiber, and antioxidants, often used in Indian cuisine and Ayurveda.",
+    "brand": "Natural",
+    "product_type": {
+      "id": "gi",
+      "name": "GI Products",
+      "slug": "gi-products"
+    },
+    "category": {
+      "name": "groceries",
+      "slug": "/vegetables",
+      "image": "/images/category/vegetables.avif"
+    },
+    "origin": {
+      "country": "ind",
+      "state": "BR",
+      "manufacturer": "NA",
+      "imported": false
+    },
+    "images": [
+      {
+        "url": "/images/products/fox-nut-makhana-1.webp",
+        "alt": "fox-nut-makhana-1"
+      },
+      {
+        "url": "/images/products/fox-nut-makhana-2.webp",
+        "alt": "fox-nut-makhana-2"
+      },
+      {
+        "url": "/images/products/fox-nut-makhana-3.webp",
+        "alt": "fox-nut-makhana-3"
+      },
+      {
+        "url": "/images/products/fox-nut-makhana-4.webp",
+        "alt": "fox-nut-makhana-4"
+      }
+    ],
+    "variation": {
+      "sku": "1",
+      "attributes": {
+        "size": "NA",
+        "color": "White",
+        "material": "NA"
+      },
+      "price": {
+        "currency": "EUR",
+        "amount": 22.39
+      },
+      "stock": {
+        "quantity": 100,
+        "in_stock": true
+      },
+      "weight_label": "1 Kg",
+      "absolute_weight": 1000,
+      "dimensions": {
+        "length": "NA",
+        "width": "NA",
+        "height": "NA"
+      },
+      "barcode": "NA",
+      "images": []
+    },
+    "discount": {
+      "type": "percentage",
+      "value": 0
+    },
+    "tags": ["makhana", "healthy", "grocery", "bihar"],
+    "status": "active",
+    "created_at": "NA",
+    "updated_at": "NA"
+  },
+  {
+    "id": "5",
+    "name": "Jaggery",
+    "slug": "jaggery",
+    "description": "Jaggery is a traditional unrefined sweetener made by boiling raw sugarcane juice or palm sap until it solidifies. It is rich in minerals and iron, and commonly used in Indian sweets, cooking, and Ayurvedic remedies.",
+    "brand": "Natural",
+    "product_type": {
+      "id": "organic",
+      "name": "Organic Products",
+      "slug": "organic-products"
+    },
+    "category": {
+      "name": "groceries",
+      "slug": "/vegetables",
+      "image": "/images/category/vegetables.avif"
+    },
+    "origin": {
+      "country": "ind",
+      "state": "NA",
+      "manufacturer": "NA",
+      "imported": false
+    },
+    "images": [
+      {
+        "url": "/images/products/jaggery-1.webp",
+        "alt": "jaggery-1"
+      }
+    ],
+    "variation": {
+      "sku": "1",
+      "attributes": {
+        "size": "NA",
+        "color": "White",
+        "material": "NA"
+      },
+      "price": {
+        "currency": "EUR",
+        "amount": 0.55
+      },
+      "stock": {
+        "quantity": 100,
+        "in_stock": true
+      },
+      "weight_label": "250g",
+      "absolute_weight": 250,
+      "dimensions": {
+        "length": "NA",
+        "width": "NA",
+        "height": "NA"
+      },
+      "barcode": "NA",
+      "images": []
+    },
+    "discount": {
+      "type": "percentage",
+      "value": 0
+    },
+    "tags": ["jaggery", "healthy", "grocery"],
+    "status": "active",
+    "created_at": "NA",
+    "updated_at": "NA"
+  },
+  {
+    "id": "gi-tea-1",
+    "name": "Assam Orthodox Tea Leaves",
+    "slug": "assam-orthodox-tea-leaves",
+    "description": "Premium whole-leaf tea from Assam, known for its bold flavor and rich aroma.",
+    "brand": "Assam Tea Board",
+    "product_type": {
+      "id": "gi",
+      "name": "GI Products",
+      "slug": "gi-products"
+    },
+    "category": {
+      "name": "Tea/Coffee",
+      "slug": "tea-coffee",
+      "image": "/images/category/tea_coffee_grains.avif"
+    },
+    "origin": {
+      "country": "ind",
+      "state": "AS",
+      "manufacturer": "NA",
+      "imported": false
+    },
+    "images": [
+      {
+        "url": "/images/products/assam-orthodox-tea-leaves-1.avif",
+        "alt": "assam-orthodox-tea-leaves"
+      }
+    ],
+    "variation": {
+      "sku": "gi-tea-1",
+      "attributes": {
+        "size": "250g",
+        "color": "Dark Brown",
+        "material": "Tea Leaves"
+      },
+      "price": { "currency": "EUR", "amount": 9.5 },
+      "stock": { "quantity": 200, "in_stock": true },
+      "weight_label": "250 g",
+      "absolute_weight": 250,
+      "dimensions": { "length": "10 cm", "width": "6 cm", "height": "15 cm" },
+      "barcode": "NA",
+      "images": []
+    },
+    "discount": { "type": "percentage", "value": 5 },
+    "tags": ["assam", "tea", "orthodox", "gi"],
+    "status": "active",
+    "created_at": "NA",
+    "updated_at": "NA"
+  },
+  {
+    "id": "gi-tea-2",
+    "name": "Darjeeling First Flush Tea",
+    "slug": "darjeeling-first-flush-tea",
+    "description": "Delicate and floral, Darjeeling first flush is handpicked from the Himalayan slopes.",
+    "brand": "Darjeeling Tea Estates",
+    "product_type": {
+      "id": "gi",
+      "name": "GI Products",
+      "slug": "gi-products"
+    },
+    "category": {
+      "name": "Tea/Coffee",
+      "slug": "tea-coffee",
+      "image": "/images/category/tea_coffee_grains.avif"
+    },
+    "origin": {
+      "country": "ind",
+      "state": "WB",
+      "manufacturer": "NA",
+      "imported": false
+    },
+    "images": [
+      {
+        "url": "/images/products/darjeeling-first-flush-tea-1.avif",
+        "alt": "darjeeling-first-flush-tea"
+      }
+    ],
+    "variation": {
+      "sku": "gi-tea-2",
+      "attributes": {
+        "size": "250g",
+        "color": "Golden",
+        "material": "Tea Leaves"
+      },
+      "price": { "currency": "EUR", "amount": 10.5 },
+      "stock": { "quantity": 180, "in_stock": true },
+      "weight_label": "250 g",
+      "absolute_weight": 250,
+      "dimensions": { "length": "10 cm", "width": "6 cm", "height": "15 cm" },
+      "barcode": "NA",
+      "images": []
+    },
+    "discount": { "type": "percentage", "value": 8 },
+    "tags": ["darjeeling", "tea", "first flush"],
+    "status": "active",
+    "created_at": "NA",
+    "updated_at": "NA"
+  },
+  {
+    "id": "gi-tea-3",
+    "name": "Coorg Coffee Beans",
+    "slug": "coorg-coffee-beans",
+    "description": "Aromatic Robusta coffee beans sourced from the lush plantations of Coorg, Karnataka.",
+    "brand": "Coorg Plantation",
+    "product_type": {
+      "id": "gi",
+      "name": "GI Products",
+      "slug": "gi-products"
+    },
+    "category": {
+      "name": "Tea/Coffee",
+      "slug": "tea-coffee",
+      "image": "/images/category/tea_coffee_grains.avif"
+    },
+    "origin": {
+      "country": "ind",
+      "state": "KA",
+      "manufacturer": "NA",
+      "imported": false
+    },
+    "images": [
+      {
+        "url": "/images/products/coorg-coffee-beans-1.avif",
+        "alt": "coorg-coffee-beans"
+      }
+    ],
+    "variation": {
+      "sku": "gi-tea-3",
+      "attributes": {
+        "size": "250g",
+        "color": "Brown",
+        "material": "Coffee Beans"
+      },
+      "price": { "currency": "EUR", "amount": 11.0 },
+      "stock": { "quantity": 150, "in_stock": true },
+      "weight_label": "250 g",
+      "absolute_weight": 250,
+      "dimensions": { "length": "10 cm", "width": "6 cm", "height": "15 cm" },
+      "barcode": "NA",
+      "images": []
+    },
+    "discount": { "type": "percentage", "value": 10 },
+    "tags": ["coorg", "coffee", "beans"],
+    "status": "active",
+    "created_at": "NA",
+    "updated_at": "NA"
+  },
+  {
+    "id": "gi-tea-4",
+    "name": "Araku Valley Organic Coffee",
+    "slug": "araku-valley-organic-coffee",
+    "description": "Sustainably grown Arabica beans from Araku Valley, Andhra Pradesh, with a unique fruity note.",
+    "brand": "Araku Farmers",
+    "product_type": {
+      "id": "non-gi",
+      "name": "Non-GI Products",
+      "slug": "non-gi-products"
+    },
+    "category": {
+      "name": "Tea/Coffee",
+      "slug": "tea-coffee",
+      "image": "/images/category/tea_coffee_grains.avif"
+    },
+    "origin": {
+      "country": "ind",
+      "state": "AP",
+      "manufacturer": "NA",
+      "imported": false
+    },
+    "images": [
+      {
+        "url": "/images/products/araku-valley-organic-coffee-1.avif",
+        "alt": "araku-valley-organic-coffee"
+      }
+    ],
+    "variation": {
+      "sku": "gi-tea-4",
+      "attributes": {
+        "size": "250g",
+        "color": "Dark Brown",
+        "material": "Coffee Beans"
+      },
+      "price": { "currency": "EUR", "amount": 12.0 },
+      "stock": { "quantity": 120, "in_stock": true },
+      "weight_label": "250 g",
+      "absolute_weight": 250,
+      "dimensions": { "length": "10 cm", "width": "6 cm", "height": "15 cm" },
+      "barcode": "NA",
+      "images": []
+    },
+    "discount": { "type": "percentage", "value": 12 },
+    "tags": ["araku", "coffee", "organic"],
+    "status": "active",
+    "created_at": "NA",
+    "updated_at": "NA"
+  },
+  {
+    "id": "gi-tea-5",
+    "name": "Nilgiri Blue Mountain Tea",
+    "slug": "nilgiri-blue-mountain-tea",
+    "description": "Strong and brisk tea from the Nilgiris, perfect for traditional Indian chai.",
+    "brand": "Nilgiri Tea Co.",
+    "product_type": {
+      "id": "gi",
+      "name": "GI Products",
+      "slug": "gi-products"
+    },
+    "category": {
+      "name": "Tea/Coffee",
+      "slug": "tea-coffee",
+      "image": "/images/category/tea_coffee_grains.avif"
+    },
+    "origin": {
+      "country": "ind",
+      "state": "TN",
+      "manufacturer": "NA",
+      "imported": false
+    },
+    "images": [
+      {
+        "url": "/images/products/nilgiri-blue-mountain-tea-1.avif",
+        "alt": "nilgiri-blue-mountain-tea"
+      }
+    ],
+    "variation": {
+      "sku": "gi-tea-5",
+      "attributes": {
+        "size": "250g",
+        "color": "Amber",
+        "material": "Tea Leaves"
+      },
+      "price": { "currency": "EUR", "amount": 10.0 },
+      "stock": { "quantity": 160, "in_stock": true },
+      "weight_label": "250 g",
+      "absolute_weight": 250,
+      "dimensions": { "length": "10 cm", "width": "6 cm", "height": "15 cm" },
+      "barcode": "NA",
+      "images": []
+    },
+    "discount": { "type": "percentage", "value": 6 },
+    "tags": ["nilgiri", "tea", "blue mountain"],
+    "status": "active",
+    "created_at": "NA",
+    "updated_at": "NA"
+  },
+  {
+    "id": "gi-tea-5",
+    "name": "Araku Valley Arabica Coffee",
+    "slug": "araku-valley-arabica-coffee",
+    "description": "Araku Valley Arabica Coffee, grown around Visakhapatnam district in Andhra Pradesh and Koraput district in Odisha, is light to medium in strength, has a pleasant acidity with a citrus note of grape fruit and a mild jaggery-like sweetness.",
+    "brand": "Araku Arabica",
+    "product_type": {
+      "id": "gi",
+      "name": "GI Products",
+      "slug": "gi-products"
+    },
+    "category": {
+      "name": "Tea/Coffee",
+      "slug": "tea-coffee",
+      "image": "/images/category/tea_coffee_grains.avif"
+    },
+    "origin": {
+      "country": "ind",
+      "state": "AP",
+      "manufacturer": "NA",
+      "imported": false
+    },
+    "images": [
+      {
+        "url": "/images/products/araku-valley-arabica-coffee-1.webp",
+        "alt": "araku-valley-arabica-coffee"
+      }
+    ],
+    "variation": {
+      "sku": "gi-tea-5",
+      "attributes": {
+        "size": "250g",
+        "color": "Amber",
+        "material": "Tea Leaves"
+      },
+      "price": { "currency": "EUR", "amount": 10.0 },
+      "stock": { "quantity": 160, "in_stock": true },
+      "weight_label": "250 g",
+      "absolute_weight": 250,
+      "dimensions": { "length": "10 cm", "width": "6 cm", "height": "15 cm" },
+      "barcode": "NA",
+      "images": []
+    },
+    "discount": { "type": "percentage", "value": 6 },
+    "tags": ["nilgiri", "tea", "blue mountain"],
+    "status": "active",
+    "created_at": "NA",
+    "updated_at": "NA"
+  },
+  {
+    "id": "101",
+    "name": "Aranmula Kannadi",
+    "slug": "aranmula-kannadi",
+    "description": "Aranmula Kannadi is a traditional handcrafted metal mirror from Aranmula, Kerala. Made from a special metal alloy and polished by skilled artisans, it reflects a unique mirror surface without glass.",
+    "brand": "Aranmula Artisans",
+    "product_type": {
+      "id": "handicraft",
+      "name": "Handicraft Products",
+      "slug": "handicraft-products"
+    },
+    "category": {
+      "name": "handicrafts",
+      "slug": "/handicrafts",
+      "image": "/images/category/handicrafts.avif"
+    },
+    "origin": {
+      "country": "ind",
+      "state": "KL",
+      "manufacturer": "Aranmula Artisans Cooperative",
+      "imported": false
+    },
+    "images": [
+      {
+        "url": "/images/products/aranmula-kannadi-1.webp",
+        "alt": "Aranmula Kannadi Mirror"
+      }
+    ],
+    "variation": {
+      "sku": "AK001",
+      "attributes": {
+        "size": "Medium",
+        "color": "Metallic",
+        "material": "Metal Alloy"
+      },
+      "price": {
+        "currency": "INR",
+        "amount": 1500
+      },
+      "stock": {
+        "quantity": 50,
+        "in_stock": true
+      },
+      "weight_label": "500g",
+      "absolute_weight": 500,
+      "dimensions": {
+        "length": "15cm",
+        "width": "10cm",
+        "height": "2cm"
+      },
+      "barcode": "NA",
+      "images": []
+    },
+    "discount": {
+      "type": "percentage",
+      "value": 0
+    },
+    "tags": [
+      "aranmula",
+      "kannadi",
+      "handicraft",
+      "kerala",
+      "metal mirror",
+      "artisan"
+    ],
+    "status": "active",
+    "created_at": "NA",
+    "updated_at": "NA"
+  }
+]

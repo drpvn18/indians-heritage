@@ -1,0 +1,50 @@
+Primary Colors
+
+Orange: #F26C36 (from logo)
+Green: #0A8D42 (from logo)
+
+Secondary/Accent Colors
+
+Light Orange: #F78B5C (for hover states, highlights)
+Pale Orange: #FFDECB (for subtle backgrounds, cards)
+Mint Green: #2CA966 (for secondary buttons, hover states)
+Pale Green: #E1F5EB (for subtle backgrounds, cards)
+
+Neutral Colors
+
+Off-White: #F9F5F0 (main background color)
+Light Gray: #E5E5E5 (secondary background, dividers)
+Medium Gray: #999999 (for secondary text, borders)
+Dark Gray: #333333 (for body text)
+Black: #000000 (for headings, emphasis)
+
+----------------------------------------------------------------------------------
+
+Primary Colors
+
+Deep Orange: #E65100 (slightly darker than logo orange)
+Forest Green: #007235 (slightly deeper than logo green)
+
+Secondary/Accent Colors
+
+Amber: #FFA000 (complementary warm tone)
+Teal: #00897B (complementary cool tone)
+Coral: #FF7043 (lighter vibrant orange)
+Sage: #7CB342 (lighter green option)
+
+Neutral Colors
+
+Ivory: #FFFAF0 (warm white for backgrounds)
+Stone: #F5F5F5 (light neutral)
+Taupe: #D7CCC8 (warm gray)
+Charcoal: #424242 (for text and details)
+Deep Brown: #3E2723 (for emphasis and contrast)
+
+----------------------------------------------------------------------------------
+
+🎨 Primary Palette (from logo)
+Color	Hex Code	Usage Suggestion
+Saffron Orange	#F26522	Primary buttons, headings
+Indian Red	#E30613	Accents, icons, or badges
+Heritage Green	#008543	Call-to-actions, footer, navbar
+White	#FFFFFF	Background, text contrast
