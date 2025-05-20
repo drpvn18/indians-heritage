@@ -51,7 +51,9 @@ export default function CategoryCarousel() {
                                 categoryList?.map((category, index) => {
                                     return (
                                         <div className="embla__slide" key={index}>
-                                            <div className="flex flex-col items-center justify-center cursor-pointer border-2 border-[#F9F5F0] hover:border-[#FFDECB] rounded-md p-2" onClick={() => router.push(`${category?.endpoint}`)}>
+                                            <div className="flex flex-col items-center justify-center cursor-pointer border-2 border-[#F9F5F0] hover:border-[#FFDECB] rounded-md p-2"
+                                                onClick={() => router.push(`/category/${category?.endpoint}`)}
+                                            >
                                                 <Image src={`${category?.image || ""}`} alt={`${category?.title}`} width={100} height={100} className="h-[100px] w-[100px] sm:h-[150px] sm:w-[150px] rounded-full" fetchPriority="high" />
                                                 <p className="text-center pt-[5px] text-[14px] font-medium">{category?.title}</p>
                                             </div>
