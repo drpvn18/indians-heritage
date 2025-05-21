@@ -17078,9 +17078,9 @@
       "slug": "gi-products"
     },
     "category": {
-      "name": "Sweets & Snacks",
-      "slug": "sweets-snacks",
-      "image": "/images/category/sweets-snacks.avif"
+      "name": "Savouries",
+      "slug": "/savouries",
+      "image": "/images/category/savouries.avif"
     },
     "origin": {
       "country": "IND",
@@ -17383,9 +17383,9 @@
       "slug": "gi-products"
     },
     "category": {
-      "name": "Sweets & Snacks",
-      "slug": "sweets-snacks",
-      "image": "/images/category/sweets-snacks.avif"
+      "name": "Savouries",
+      "slug": "/savouries",
+      "image": "/images/category/savouries.avif"
     },
     "origin": {
       "country": "IND",

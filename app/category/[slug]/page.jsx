@@ -32,7 +32,7 @@ export default function ProductCategory({ params }) {
             if (slug === "all") {
                 temp = products;
             } else {
-                temp = products.filter((item) => item.category?.slug === slug);
+                temp = products.filter((item) => item.category?.slug?.includes(slug));
             }
             setProductsList(temp);
         } catch (error) {
