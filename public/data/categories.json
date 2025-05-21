@@ -327,25 +327,6 @@
             "image": "/images/category/savouries.avif"
           }
         ]
-      },
-      {
-        "id": "spiritual",
-        "title": "Spiritual",
-        "endpoint": "/spiritual",
-        "sub_categories": [
-          {
-            "id": 1,
-            "title": "Idols",
-            "endpoint": "/idols",
-            "image": "/images/category/idols.jpg"
-          },
-          {
-            "id": 2,
-            "title": "Pooja products",
-            "endpoint": "/pooja-products",
-            "image": "/images/category/pooja_products.avif"
-          }
-        ]
       }
     ]
   },

@@ -21,29 +21,29 @@ export default function MenuSidebar({ openSidebar, setOpenSidebar }) {
     const menuItems = [
         {
             "id": "gi",
-            "title": "GI Products",
+            "title": "GI Tagged Products",
             "endpoint": "/category/gi-products"
         },
-        {
-            "id": "non-gi",
-            "title": "Non GI Products",
-            "endpoint": "/category/non-gi-products"
-        },
+        // {
+        //     "id": "non-gi",
+        //     "title": "Non GI Products",
+        //     "endpoint": "/category/non-gi-products"
+        // },
         {
             "id": "organic",
             "title": "Organic Products",
             "endpoint": "/category/organic-products"
         },
-        {
-            "id": "about-us",
-            "title": "About Us",
-            "endpoint": "/about-us"
-        },
-        {
-            "id": "contact-us",
-            "title": "Contact Us",
-            "endpoint": "/contact-us"
-        }
+        // {
+        //     "id": "about-us",
+        //     "title": "About Us",
+        //     "endpoint": "/about-us"
+        // },
+        // {
+        //     "id": "contact-us",
+        //     "title": "Contact Us",
+        //     "endpoint": "/contact-us"
+        // }
     ]
 
     const MenuList = (

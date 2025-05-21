@@ -3,7 +3,7 @@
 import React, { useContext, useEffect, useState } from 'react';
 import Box from '@mui/material/Box';
 import Drawer from '@mui/material/Drawer';
-import { HeartCrack, Minus, Plus, Truck, X } from "lucide-react"
+import { HeartCrack, Minus, Plus, Trash2, Truck, X } from "lucide-react"
 import { LinearProgress } from '@mui/material';
 import { useRouter } from 'next/navigation';
 import Image from 'next/image';
@@ -228,7 +228,7 @@ export default function Cart({ openCart, setOpenCart }) {
                                                 </div>
                                                 <div className="col-span-1">
                                                     <p className='cursor-pointer px-2' onClick={() => removeFromCart(product?.cart_item_id)}>
-                                                        <X />
+                                                        <Trash2 color='red' strokeWidth={2} />
                                                     </p>
                                                 </div>
                                             </div>

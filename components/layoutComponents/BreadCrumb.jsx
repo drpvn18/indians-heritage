@@ -31,10 +31,10 @@ export default function BreadCrumb() {
                     link: `/category/${list[i]}`,
                     lastPart: false,
                 });
-            } else if (list[i] !== "" && list[i] === "product-category") {
+            } else if (list[i] !== "" && list[i] === "category") {
                 temp.push({
                     label: "Category",
-                    link: "/category",
+                    link: "",
                     lastPart: false,
                 });
             } else if (list[i] !== "") {

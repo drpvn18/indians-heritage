@@ -4,7 +4,7 @@ import React, { useContext, useEffect, useState } from "react";
 import styles from "./../../styles/layoutComponents/Navbar.module.css";
 import Image from "next/image";
 import { Menu, ShoppingCart, Search } from "lucide-react";
-import { useRouter } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 import DetailedCategory from "./DetailedCategory";
 import Categories from "./../../public/data/categories.json";
 import Cart from "../cart/Cart";
@@ -14,6 +14,7 @@ import ProductSearch from "./ProductSearch";
 
 export default function Navbar() {
     const router = useRouter();
+    const pathname = usePathname();
     const { getCartCount } = useContext(CartContext);
     const [activeCategory, setActiveCategory] = useState("");
     const [mouseOnNavbar, setMouseOnNavbar] = useState(false);
@@ -25,7 +26,12 @@ export default function Navbar() {
     useEffect(() => {
         if (!mouseOnNavbar && !mouseOnDropdown)
             setActiveCategory("");
-    }, [mouseOnNavbar]);
+    }, [mouseOnNavbar, mouseOnDropdown]);
+
+    useEffect(() => {
+        console.log(pathname);
+        setActiveCategory("");
+    }, [pathname])
 
     return (
         <div className={styles.container}>
@@ -50,16 +56,25 @@ export default function Navbar() {
                     }
                     <Image src="/images/logo.png" width={75} height={75} alt="indian heritage logo" className="h-[65px] w-[110px] rounded-md cursor-pointer" onClick={() => router?.push("/")} />
                 </div>
+
                 <div className="h-[85px] flex align-middle" onMouseLeave={() => setMouseOnNavbar(false)}>
                     <div className="my-auto" onMouseEnter={() => setMouseOnNavbar(true)}>
                         <div className={styles.categoryList}>
-                            <div className={`${activeCategory === "gi" && styles.active_category} ${styles.category_item}`} onMouseEnter={() => setActiveCategory("gi")}>
-                                GI Products
+                            <div className={`${activeCategory === "gi" && styles.active_category} ${styles.category_item}`}
+                                onMouseEnter={() => setActiveCategory("gi")}
+                                onClick={() => router.push("/category/gi-products")}
+                            >
+                                GI Tagged Products
                             </div>
-                            {/* <div className={`${activeCategory === "non-gi" && styles.active_category} ${styles.category_item}`} onMouseEnter={() => setActiveCategory("non-gi")}>
+
+                            {/* <div className={`${activeCategory === "non-gi" && styles.active_category} ${styles.category_item}`} onMouseEnter={() => setActiveCategory("non-gi")} onClick={() => router.push("/category/non-gi-products")}>
                                 Non-GI Products
                             </div> */}
-                            <div className={`${activeCategory === "organic" && styles.active_category} ${styles.category_item}`} onMouseEnter={() => setActiveCategory("organic")}>
+
+                            <div className={`${activeCategory === "organic" && styles.active_category} ${styles.category_item}`}
+                                onMouseEnter={() => setActiveCategory("organic")}
+                                onClick={() => router.push("/category/organic-products")}
+                            >
                                 Organic Products
                             </div>
                         </div>
@@ -82,7 +97,7 @@ export default function Navbar() {
                 {
                     activeCategory !== "" && Categories[activeCategory]?.categories?.length !== 0 && (
                         <div className={styles.detailed_category} onMouseEnter={() => setMouseOnDropdown(true)} onMouseLeave={() => setMouseOnDropdown(false)}>
-                            <DetailedCategory dropdown_data={Categories[activeCategory]} />
+                            <DetailedCategory dropdown_data={Categories[activeCategory]} setMouseOnDropdown={setMouseOnDropdown} />
                         </div>
                     )
                 }

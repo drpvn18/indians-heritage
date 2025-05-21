@@ -5,16 +5,18 @@ import styles from "./../../styles/layoutComponents/Navbar.module.css";
 import { ChevronRight } from "lucide-react";
 import Link from "next/link";
 
-export default function DetailedCategory({ dropdown_data }) {
+export default function DetailedCategory({ dropdown_data, setMouseOnDropdown }) {
 
     return (
-        <div className={styles.detailed_category_container}>
+        <div className={styles.detailed_category_container} onMouseLeave={() => setMouseOnDropdown(false)}>
             {
                 dropdown_data?.categories?.map((category) => {
                     return (
                         <ul className={styles.block} key={category?.id}>
-                            <li className="font-semibold mb-[15px] text-xl">
-                                {category?.title}
+                            <li className={`${styles.block_title}`}>
+                                <Link href={`/category/${category?.endpoint}`}>
+                                    {category?.title}
+                                </Link>
                             </li>
                             {
                                 category?.sub_categories?.map(sub_category => {
@@ -27,7 +29,8 @@ export default function DetailedCategory({ dropdown_data }) {
                                 })
                             }
                             <li className={styles.block_element}>
-                                <Link href={`/category/${category?.endpoint}`}>view all</Link>
+                                <ChevronRight size={18} />
+                                <Link href={`/category/${category?.endpoint}`}>Others</Link>
                             </li>
                         </ul>
                     );

@@ -31,7 +31,7 @@ export default function Footer() {
                     </li>
                     <li className={styles.block_element}>
                         <Mail />
-                        <p onClick={() => window.location.href = "mailto:support@indianheritage.eu"} className="pl-3 cursor-pointer text-wrap">support@indianheritage.eu</p>
+                        <p onClick={() => window.location.href = "mailto:indianheritage.eu@gmail.com"} className="pl-3 cursor-pointer text-wrap">indianheritage.eu@gmail.com</p>
                     </li>
                 </ul>
                 <ul className={styles.block}>
@@ -39,7 +39,7 @@ export default function Footer() {
                         Categories
                     </li>
                     <li className={styles.block_element}>
-                        <ChevronRight size={18} /><Link href="/category/gi-products">GI Products</Link>
+                        <ChevronRight size={18} /><Link href="/category/gi-products">GI Tagged Products</Link>
                     </li>
                     <li className={styles.block_element}>
                         <ChevronRight size={18} /><Link href="/category/organic-products">Organic Products</Link>
