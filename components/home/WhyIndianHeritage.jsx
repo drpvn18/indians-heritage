@@ -53,7 +53,7 @@ export default function WhyIndianHeritage() {
                     Why Indian Heritage?
                 </div>
 
-                <div ref={videoContainerRef} className="w-[100%] sm:w-[80%] my-[30px] mx-auto">
+                <div ref={videoContainerRef} className="w-[100%] sm:w-[80%] mt-[50px] mb-[75px] mx-auto">
                     <video
                         ref={videoRef}
                         width="100%"
@@ -61,6 +61,7 @@ export default function WhyIndianHeritage() {
                         controls
                         preload="none"
                         autoPlay={inView}
+                        className="rounded-lg drop-shadow-2xl"
                     >
                         <source src="/videos/why_indian_heritage-1.mp4" type="video/mp4" />
                     </video>
