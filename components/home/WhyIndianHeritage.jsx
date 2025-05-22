@@ -59,6 +59,7 @@ export default function WhyIndianHeritage() {
                         width="100%"
                         height="240"
                         controls
+                        muted
                         preload="none"
                         autoPlay={inView}
                         className="rounded-lg drop-shadow-2xl"

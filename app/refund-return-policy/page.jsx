@@ -26,7 +26,7 @@ const privacyPolicyContent = [
         content: [
             {
                 type: "list-item",
-                content: "To initiate a refund request, please contact our customer support team at info@indianheritage.eu"
+                content: "To initiate a refund request, please contact our customer support team at indianheritage.eu@gmail.com"
             },
             {
                 type: "list-item",
@@ -65,7 +65,7 @@ const privacyPolicyContent = [
         content: [
             {
                 type: "text",
-                content: "If you have any questions or concerns regarding our refund policy, please contact us at info@indianheritage.eu. We are committed to ensuring your satisfaction and will do our best to address any issues promptly."
+                content: "If you have any questions or concerns regarding our refund policy, please contact us at indianheritage.eu@gmail.com. We are committed to ensuring your satisfaction and will do our best to address any issues promptly."
             }
         ]
     },

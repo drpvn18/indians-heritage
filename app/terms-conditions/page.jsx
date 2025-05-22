@@ -123,7 +123,7 @@ const privacyPolicyContent = [
             {
                 type: "text",
                 content: "If you have any questions or concerns about these terms and conditions, please contact us at -",
-                external_resources: ["info@indianheritage.eu"]
+                external_resources: ["indianheritage.eu@gmail.com"]
             },
             {
                 type: "text",
