@@ -27,10 +27,10 @@ export default function DetailedCategory({ dropdown_data, setMouseOnDropdown }) 
                                     );
                                 })
                             }
-                            <li className={styles.block_element}>
+                            {/* <li className={styles.block_element}>
                                 <ChevronRight size={18} />
                                 <Link href={`/${dropdown_data?.endpoint}/${category?.endpoint}/others`}>Others</Link>
-                            </li>
+                            </li> */}
                         </ul>
                     );
                 })
