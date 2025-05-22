@@ -6,7 +6,6 @@ import { ChevronRight } from "lucide-react";
 import Link from "next/link";
 
 export default function DetailedCategory({ dropdown_data, setMouseOnDropdown }) {
-
     return (
         <div className={styles.detailed_category_container} onMouseLeave={() => setMouseOnDropdown(false)}>
             {
@@ -14,7 +13,7 @@ export default function DetailedCategory({ dropdown_data, setMouseOnDropdown }) 
                     return (
                         <ul className={styles.block} key={category?.id}>
                             <li className={`${styles.block_title}`}>
-                                <Link href={`/category/${category?.endpoint}`}>
+                                <Link href={`/${dropdown_data?.endpoint}/${category?.endpoint}`}>
                                     {category?.title}
                                 </Link>
                             </li>
@@ -23,14 +22,14 @@ export default function DetailedCategory({ dropdown_data, setMouseOnDropdown }) 
                                     return (
                                         <li className={styles.block_element} key={sub_category?.id}>
                                             <ChevronRight size={18} />
-                                            <Link href={`${dropdown_data?.endpoint}/${sub_category?.endpoint}`}>{sub_category?.title}</Link>
+                                            <Link href={`/${dropdown_data?.endpoint}/${sub_category?.endpoint}`}>{sub_category?.title}</Link>
                                         </li>
                                     );
                                 })
                             }
                             <li className={styles.block_element}>
                                 <ChevronRight size={18} />
-                                <Link href={`/category/${category?.endpoint}`}>Others</Link>
+                                <Link href={`/${dropdown_data?.endpoint}/${category?.endpoint}/others`}>Others</Link>
                             </li>
                         </ul>
                     );

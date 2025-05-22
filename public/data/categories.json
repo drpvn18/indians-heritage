@@ -2,53 +2,53 @@
   "gi": {
     "id": "gi",
     "title": "GI Products",
-    "endpoint": "/category/gi-products",
+    "endpoint": "category/gi-products",
     "categories": [
       {
         "id": "grocery",
         "title": "Grocery",
-        "endpoint": "/groceries",
+        "endpoint": "groceries",
         "sub_categories": [
           {
             "id": 1,
             "title": "Tea/Coffee",
-            "endpoint": "/tea-coffee",
+            "endpoint": "tea-coffee",
             "image": "/images/category/tea_coffee_grains.avif"
           },
           {
             "id": 2,
             "title": "Rice",
-            "endpoint": "/rice",
+            "endpoint": "rice",
             "image": "/images/category/rice.avif"
           },
           {
             "id": 3,
             "title": "Wheat",
-            "endpoint": "/wheat",
+            "endpoint": "wheat",
             "image": "/images/category/wheat_flour.avif"
           },
           {
             "id": 4,
             "title": "Spices",
-            "endpoint": "/spices",
+            "endpoint": "spices",
             "image": "/images/category/spices.avif"
           },
           {
             "id": 5,
             "title": "Pulses",
-            "endpoint": "/pulses",
+            "endpoint": "pulses",
             "image": "/images/category/pulses.avif"
           },
           {
             "id": 6,
             "title": "Vegetables",
-            "endpoint": "/vegetables",
+            "endpoint": "vegetables",
             "image": "/images/category/vegetables.avif"
           },
           {
             "id": 7,
             "title": "Fruits",
-            "endpoint": "/fruits",
+            "endpoint": "fruits",
             "image": "/images/category/fruits.avif"
           }
         ]
@@ -56,18 +56,18 @@
       {
         "id": "ready-to-eat",
         "title": "Ready to eat",
-        "endpoint": "/ready-to-eat",
+        "endpoint": "ready-to-eat",
         "sub_categories": [
           {
             "id": 1,
             "title": "Sweets",
-            "endpoint": "/sweets",
+            "endpoint": "sweets",
             "image": "/images/category/sweets.avif"
           },
           {
             "id": 2,
             "title": "Savouries",
-            "endpoint": "/savouries",
+            "endpoint": "savouries",
             "image": "/images/category/savouries.avif"
           }
         ]
@@ -75,24 +75,24 @@
       {
         "id": "fashion",
         "title": "Fashion",
-        "endpoint": "/fashion",
+        "endpoint": "fashion",
         "sub_categories": [
           {
             "id": 1,
             "title": "Handlooms",
-            "endpoint": "/handlooms",
+            "endpoint": "handlooms",
             "image": "/images/category/handlooms.avif"
           },
           {
             "id": 2,
             "title": "Jewellery",
-            "endpoint": "/jewellery",
+            "endpoint": "jewellery",
             "image": "/images/category/jewellery.avif"
           },
           {
             "id": 3,
             "title": "Accessories",
-            "endpoint": "/accessories",
+            "endpoint": "accessories",
             "image": "/images/category/accessories.avif"
           }
         ]
@@ -100,42 +100,42 @@
       {
         "id": "handcrafts",
         "title": "Handcrafts",
-        "endpoint": "/handcrafts",
+        "endpoint": "handcrafts",
         "sub_categories": [
           {
             "id": 1,
             "title": "Metal",
-            "endpoint": "/metal",
+            "endpoint": "metal",
             "image": "/images/category/metal_handcrafts.avif"
           },
           {
             "id": 2,
             "title": "Wood",
-            "endpoint": "/wood",
+            "endpoint": "wood",
             "image": "/images/category/wood_handcrafts.avif"
           },
           {
             "id": 3,
             "title": "Stone",
-            "endpoint": "/stone",
+            "endpoint": "stone",
             "image": "/images/category/stone_handcrafts.jpg"
           },
           {
             "id": 4,
             "title": "Natural",
-            "endpoint": "/natural",
+            "endpoint": "natural",
             "image": "/images/category/natural_handcrafts.avif"
           },
           {
             "id": 5,
             "title": "Paintings",
-            "endpoint": "/paintings",
+            "endpoint": "paintings",
             "image": "/images/category/paintings_handcrafts.avif"
           },
           {
             "id": 6,
             "title": "Toys",
-            "endpoint": "/toys",
+            "endpoint": "toys",
             "image": "/images/category/toys_handcrafts.avif"
           }
         ]
@@ -143,18 +143,18 @@
       {
         "id": "spiritual",
         "title": "Spiritual",
-        "endpoint": "/spiritual",
+        "endpoint": "spiritual",
         "sub_categories": [
           {
             "id": 1,
             "title": "Idols",
-            "endpoint": "/idols",
+            "endpoint": "idols",
             "image": "/images/category/idols.jpg"
           },
           {
             "id": 2,
             "title": "Pooja products",
-            "endpoint": "/pooja-products",
+            "endpoint": "pooja-products",
             "image": "/images/category/pooja_products.avif"
           }
         ]
@@ -164,53 +164,53 @@
   "non-gi": {
     "id": "non-gi",
     "title": "Non GI Products",
-    "endpoint": "/category/non-gi-products",
+    "endpoint": "category/non-gi-products",
     "categories": [
       {
         "id": "grocery",
         "title": "Grocery",
-        "endpoint": "/groceries",
+        "endpoint": "groceries",
         "sub_categories": [
           {
             "id": 1,
             "title": "Tea/Coffee",
-            "endpoint": "/tea-coffee",
+            "endpoint": "tea-coffee",
             "image": "/images/category/tea_coffee_grains.avif"
           },
           {
             "id": 2,
             "title": "Rice",
-            "endpoint": "/rice",
+            "endpoint": "rice",
             "image": "/images/category/rice.avif"
           },
           {
             "id": 3,
             "title": "Wheat",
-            "endpoint": "/wheat",
+            "endpoint": "wheat",
             "image": "/images/category/wheat_flour.avif"
           },
           {
             "id": 4,
             "title": "Spices",
-            "endpoint": "/spices",
+            "endpoint": "spices",
             "image": "/images/category/spices.avif"
           },
           {
             "id": 5,
             "title": "Pulses",
-            "endpoint": "/pulses",
+            "endpoint": "pulses",
             "image": "/images/category/pulses.avif"
           },
           {
             "id": 6,
             "title": "Vegetables",
-            "endpoint": "/vegetables",
+            "endpoint": "vegetables",
             "image": "/images/category/vegetables.avif"
           },
           {
             "id": 7,
             "title": "Fruits",
-            "endpoint": "/fruits",
+            "endpoint": "fruits",
             "image": "/images/category/fruits.avif"
           }
         ]
@@ -218,18 +218,18 @@
       {
         "id": "ready-to-eat",
         "title": "Ready to eat",
-        "endpoint": "/ready-to-eat",
+        "endpoint": "ready-to-eat",
         "sub_categories": [
           {
             "id": 1,
             "title": "Sweets",
-            "endpoint": "/sweets",
+            "endpoint": "sweets",
             "image": "/images/category/sweets.avif"
           },
           {
             "id": 2,
             "title": "Savouries",
-            "endpoint": "/savouries",
+            "endpoint": "savouries",
             "image": "/images/category/savouries.avif"
           }
         ]
@@ -237,18 +237,18 @@
       {
         "id": "spiritual",
         "title": "Spiritual",
-        "endpoint": "/spiritual",
+        "endpoint": "spiritual",
         "sub_categories": [
           {
             "id": 1,
             "title": "Idols",
-            "endpoint": "/idols",
+            "endpoint": "idols",
             "image": "/images/category/idols.jpg"
           },
           {
             "id": 2,
             "title": "Pooja products",
-            "endpoint": "/pooja-products",
+            "endpoint": "pooja-products",
             "image": "/images/category/pooja_products.avif"
           }
         ]
@@ -258,53 +258,53 @@
   "organic": {
     "id": "organic",
     "title": "Organic Products",
-    "endpoint": "/category/organic-products",
+    "endpoint": "category/organic-products",
     "categories": [
       {
         "id": "grocery",
         "title": "Grocery",
-        "endpoint": "/groceries",
+        "endpoint": "groceries",
         "sub_categories": [
           {
             "id": 1,
             "title": "Tea/Coffee",
-            "endpoint": "/tea-coffee",
+            "endpoint": "tea-coffee",
             "image": "/images/category/tea_coffee_grains.avif"
           },
           {
             "id": 2,
             "title": "Rice",
-            "endpoint": "/rice",
+            "endpoint": "rice",
             "image": "/images/category/rice.avif"
           },
           {
             "id": 3,
             "title": "Wheat",
-            "endpoint": "/wheat",
+            "endpoint": "wheat",
             "image": "/images/category/wheat_flour.avif"
           },
           {
             "id": 4,
             "title": "Spices",
-            "endpoint": "/spices",
+            "endpoint": "spices",
             "image": "/images/category/spices.avif"
           },
           {
             "id": 5,
             "title": "Pulses",
-            "endpoint": "/pulses",
+            "endpoint": "pulses",
             "image": "/images/category/pulses.avif"
           },
           {
             "id": 6,
             "title": "Vegetables",
-            "endpoint": "/vegetables",
+            "endpoint": "vegetables",
             "image": "/images/category/vegetables.avif"
           },
           {
             "id": 7,
             "title": "Fruits",
-            "endpoint": "/fruits",
+            "endpoint": "fruits",
             "image": "/images/category/fruits.avif"
           }
         ]
@@ -312,18 +312,18 @@
       {
         "id": "ready-to-eat",
         "title": "Ready to eat",
-        "endpoint": "/ready-to-eat",
+        "endpoint": "ready-to-eat",
         "sub_categories": [
           {
             "id": 1,
             "title": "Sweets",
-            "endpoint": "/sweets",
+            "endpoint": "sweets",
             "image": "/images/category/sweets.avif"
           },
           {
             "id": 2,
             "title": "Savouries",
-            "endpoint": "/savouries",
+            "endpoint": "savouries",
             "image": "/images/category/savouries.avif"
           }
         ]
@@ -333,13 +333,13 @@
   "about-us": {
     "id": "about-us",
     "title": "About Us",
-    "endpoint": "/about-us",
+    "endpoint": "about-us",
     "categories": []
   },
   "contact-us": {
     "id": "contact-us",
     "title": "Contact Us",
-    "endpoint": "/contact-us",
+    "endpoint": "contact-us",
     "categories": []
   }
 }

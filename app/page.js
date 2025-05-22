@@ -1,9 +1,9 @@
+import React from "react";
 import CategoryCarousel from "@/components/home/CategoryCarousel";
 import FeaturesCarousel from "@/components/home/FeaturesCarousel";
-import InstagramEmbed from "@/components/home/InstgramVideo";
 import PopularProducts from "@/components/home/PopularProducts";
 import StateReports from "@/components/home/StateReports";
-import React from "react";
+import WhyIndianHeritage from "@/components/home/WhyIndianHeritage";
 
 export default function Home() {
 	return (
@@ -12,7 +12,7 @@ export default function Home() {
 			<CategoryCarousel />
 			<StateReports />
 			<PopularProducts />
-			<InstagramEmbed />
+			<WhyIndianHeritage />
 		</div>
 	);
 }

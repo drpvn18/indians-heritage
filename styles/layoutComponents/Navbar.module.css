@@ -1,7 +1,7 @@
 .container {
     width: 100%;
     background-color: #2CA966;
-    height: 84px;
+    height: 76px;
     user-select: none;
 }
 
@@ -50,7 +50,7 @@
 
 .detailed_category {
     position: absolute;
-    top: 84px;
+    top: 74px;
     left: 0;
     right: 0;
     border-radius: 0 0 10px 10px;

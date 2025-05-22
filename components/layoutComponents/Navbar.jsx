@@ -54,10 +54,10 @@ export default function Navbar() {
                             ""
                         )
                     }
-                    <Image src="/images/logo.png" width={75} height={75} alt="indian heritage logo" className="h-[65px] w-[110px] rounded-md cursor-pointer" onClick={() => router?.push("/")} />
+                    <Image src="/logos/Indian-heritage-3.png" width={75} height={75} alt="indian heritage logo" className="h-[65px] w-[110px] rounded-md cursor-pointer" onClick={() => router?.push("/")} />
                 </div>
 
-                <div className="h-[85px] flex align-middle" onMouseLeave={() => setMouseOnNavbar(false)}>
+                <div className="h-[78px] flex align-middle" onMouseLeave={() => setMouseOnNavbar(false)}>
                     <div className="my-auto" onMouseEnter={() => setMouseOnNavbar(true)}>
                         <div className={styles.categoryList}>
                             <div className={`${activeCategory === "gi" && styles.active_category} ${styles.category_item}`}
@@ -87,7 +87,7 @@ export default function Navbar() {
 
                     <div className="relative">
                         <ShoppingCart color="white" strokeWidth={2} size={28} className="cursor-pointer" onClick={() => setOpenCart(!openCart)} />
-                        <div className={`absolute flex items-center justify-center top-[-15px] right-[-12px] font-medium text-sm bg-[#FFFFFF] rounded-full text-[#2CA966]`}>
+                        <div className={`absolute flex items-center justify-center top-[-18px] right-[-8px] font-medium text-sm bg-[#FFFFFF] rounded-full text-[#2CA966]`}>
                             <div className="h-[26px] w-[26px] text-center p-[2px]">
                                 {getCartCount() > 9 ? "9+" : getCartCount()}
                             </div>

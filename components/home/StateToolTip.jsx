@@ -37,7 +37,7 @@ export default function StateToolTip({ stateHovered }) {
                 className={`fixed z-50 text-white text-md px-4 py-2 rounded shadow-lg pointer-events-none transition-all`}
                 style={{
                     left: `${mousePosition.x}px`,
-                    top: `${mousePosition.y - 40}px`,
+                    top: `${mousePosition.y - 25}px`,
                     transform: "translate(-50%, -100%)",
                     backgroundColor: indianStates[stateHovered]?.color || "#000"
                 }}

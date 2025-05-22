@@ -26,7 +26,7 @@ const privacyPolicyContent = [
         content: [
             {
                 type: "list-item",
-                content: "To initiate a refund request, please contact our customer support team at info@indiansupermarket.eu"
+                content: "To initiate a refund request, please contact our customer support team at info@indianheritage.eu"
             },
             {
                 type: "list-item",
@@ -65,7 +65,7 @@ const privacyPolicyContent = [
         content: [
             {
                 type: "text",
-                content: "If you have any questions or concerns regarding our refund policy, please contact us at info@indiansupermarket.eu. We are committed to ensuring your satisfaction and will do our best to address any issues promptly."
+                content: "If you have any questions or concerns regarding our refund policy, please contact us at info@indianheritage.eu. We are committed to ensuring your satisfaction and will do our best to address any issues promptly."
             }
         ]
     },
@@ -78,7 +78,7 @@ const privacyPolicyContent = [
             },
             {
                 type: "list-item",
-                content: "indiansupermarket.eu reserves the right to update or modify this refund policy at any time without prior notice.Please review this policy periodically for any changes.",
+                content: "indianheritage.eu reserves the right to update or modify this refund policy at any time without prior notice.Please review this policy periodically for any changes.",
             }
         ]
     },
@@ -87,7 +87,7 @@ const privacyPolicyContent = [
         content: [
             {
                 type: "text",
-                content: "By placing an order with indiansupermarket.eu, you acknowledge and agree to abide by this refund policy."
+                content: "By placing an order with indianheritage.eu, you acknowledge and agree to abide by this refund policy."
             }
         ]
     }

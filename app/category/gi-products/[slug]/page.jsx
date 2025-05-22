@@ -3,6 +3,7 @@
 import React, { useEffect, useState } from "react";
 import dynamic from "next/dynamic";
 import products from "@/public/data/products.json";
+import categories from "@/public/data/categories.json";
 import ProductCard from "@/components/products/ProductCard";
 import loading_styles from "@/styles/Loading.module.css";
 import { useRouter, useSearchParams } from 'next/navigation';
@@ -56,6 +57,19 @@ export default function ProductCategory({ params }) {
             router.push("/category/gi-products");
     }, [stateParam])
 
+    const checkForCategoriesToInclude = (slug) => {
+        let temp_categories = [];
+
+        (categories["gi"]?.categories || [])?.map((category) => {
+            if (category?.endpoint === slug) {
+                (category["sub_categories"] || [])?.map((sub_category) => {
+                    temp_categories.push(sub_category?.endpoint || "")
+                })
+            }
+        })
+        return temp_categories;
+    }
+
     useEffect(() => {
         try {
             let state = stateSelected?.value || isValidState(stateParam) ? stateParam : null;
@@ -64,7 +78,13 @@ export default function ProductCategory({ params }) {
             if (state) {
                 temp = temp?.filter((product) => (product?.origin?.state === state && product?.product_type?.id === "gi"));
             }
-            temp = temp.filter((item) => item.category?.slug?.includes(slug));
+            const categories_to_include = checkForCategoriesToInclude(slug);
+
+            if (categories_to_include?.length > 0) {
+                temp = temp.filter((item) => categories_to_include?.includes(item.category?.slug));
+            } else {
+                temp = temp.filter((item) => item.category?.slug?.includes(slug));
+            }
             setProductsList(temp);
         } catch (error) {
             setProductsList([]);

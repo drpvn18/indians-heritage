@@ -8,11 +8,11 @@ const privacyPolicyContent = [
         content: [
             {
                 type: "text",
-                content: "Welcome to indiansupermarket.eu. These terms and conditions outline the rules and regulations for the use of our website."
+                content: "Welcome to indianheritage.eu. These terms and conditions outline the rules and regulations for the use of our website."
             },
             {
                 type: "text",
-                content: "By accessing this website, we assume you accept these terms and conditions. Do not continue to use indiansupermarket.eu if you do not agree to all of the terms and conditions stated on this page."
+                content: "By accessing this website, we assume you accept these terms and conditions. Do not continue to use indianheritage.eu if you do not agree to all of the terms and conditions stated on this page."
             }
         ]
     },
@@ -25,7 +25,7 @@ const privacyPolicyContent = [
         content: [
             {
                 type: "list-item",
-                content: "By placing an order through indiansupermarket.eu, you are confirming that you are legally capable of entering into binding contracts."
+                content: "By placing an order through indianheritage.eu, you are confirming that you are legally capable of entering into binding contracts."
             },
             {
                 type: "list-item",
@@ -86,7 +86,7 @@ const privacyPolicyContent = [
         content: [
             {
                 type: "list-item",
-                content: "The content on this website, including but not limited to text, graphics, logos, and images, is the property of indiansupermarket.eu and is protected by copyright laws."
+                content: "The content on this website, including but not limited to text, graphics, logos, and images, is the property of indianheritage.eu and is protected by copyright laws."
             }
         ]
     },
@@ -95,7 +95,7 @@ const privacyPolicyContent = [
         content: [
             {
                 type: "list-item",
-                content: "We will not be liable for any indirect, special, or consequential damages, or any loss of revenue, profits, or data arising in connection with your use of indiansupermarket.eu."
+                content: "We will not be liable for any indirect, special, or consequential damages, or any loss of revenue, profits, or data arising in connection with your use of indianheritage.eu."
             }
         ]
     },
@@ -123,11 +123,11 @@ const privacyPolicyContent = [
             {
                 type: "text",
                 content: "If you have any questions or concerns about these terms and conditions, please contact us at -",
-                external_resources: ["info@indiansupermarket.eu"]
+                external_resources: ["info@indianheritage.eu"]
             },
             {
                 type: "text",
-                content: "By using indiansupermarket.eu, you signify your acceptance of these terms.If you do not agree to these terms, please do not use our website."
+                content: "By using indianheritage.eu, you signify your acceptance of these terms.If you do not agree to these terms, please do not use our website."
             },
             {
                 type: "text",

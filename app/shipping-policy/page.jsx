@@ -51,7 +51,7 @@ const privacyPolicyContent = [
             },
             {
                 type: "list-item",
-                content: "indiansupermarket.eu is not responsible for any delays caused by customs clearance processes, local postal services, or other external factors."
+                content: "indianheritage.eu is not responsible for any delays caused by customs clearance processes, local postal services, or other external factors."
             }
         ]
     },
@@ -78,7 +78,7 @@ const privacyPolicyContent = [
         content: [
             {
                 type: "list-item",
-                content: "At indiansupermarket.eu, we highly value your privacy and personal data. We take reasonable precautions and follow industry best practices to ensure that your personal information is protected. We strive to prevent any inappropriate loss, misuse, access, disclosure, alteration, or destruction of your personal data."
+                content: "At indianheritage.eu, we highly value your privacy and personal data. We take reasonable precautions and follow industry best practices to ensure that your personal information is protected. We strive to prevent any inappropriate loss, misuse, access, disclosure, alteration, or destruction of your personal data."
             }
         ]
     },
@@ -87,7 +87,7 @@ const privacyPolicyContent = [
         content: [
             {
                 type: "list-item",
-                content: "If you have any questions or concerns regarding our shipping policy, please contact us at info@indiansupermarket.eu. We are dedicated to providing excellent customer service and will do our best to assist you."
+                content: "If you have any questions or concerns regarding our shipping policy, please contact us at info@indianheritage.eu. We are dedicated to providing excellent customer service and will do our best to assist you."
             }
         ]
     },
@@ -100,7 +100,7 @@ const privacyPolicyContent = [
             },
             {
                 type: "list-item",
-                content: "indiansupermarket.eu reserves the right to update or modify this refund policy at any time without prior notice.Please review this policy periodically for any changes.",
+                content: "indianheritage.eu reserves the right to update or modify this refund policy at any time without prior notice.Please review this policy periodically for any changes.",
             }
         ]
     },
@@ -109,7 +109,7 @@ const privacyPolicyContent = [
         content: [
             {
                 type: "text",
-                content: "By placing an order with indiansupermarket.eu, you acknowledge and agree to abide by this refund policy."
+                content: "By placing an order with indianheritage.eu, you acknowledge and agree to abide by this refund policy."
             }
         ]
     }
