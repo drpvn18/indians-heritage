@@ -17,7 +17,7 @@ export default function Footer() {
             <div className={styles.footer}>
                 <ul className={styles.block}>
                     <li>
-                        <Image src="/images/logo.png" alt="indian heritage logo" width={150} height={150} className="h-[75px] w-[125px] rounded-md cursor-pointer mb-[10px]" onClick={() => router?.push("/")} />
+                        <Image src="/logos/Indian-heritage-3.png" alt="indian heritage logo" width={150} height={150} className="h-[75px] w-[125px] rounded-md cursor-pointer mb-[10px]" onClick={() => router?.push("/")} />
                     </li>
                     <li className={styles.block_element}>
                         <div>

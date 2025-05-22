@@ -50,7 +50,7 @@ export default function MenuSidebar({ openSidebar, setOpenSidebar }) {
         <Box sx={{ width: 300, fontFamily: 'Lexend' }} role="presentation">
             <div className='h-[100vh]'>
                 <div className='bg-[#FFFFFF] w-full flex justify-between gap-[10px] items-center border-b-2 border-[#c5c5c5] py-[10px] px-[10px]'>
-                    <Image src="/images/logo.png" width={75} height={75} alt="indian heritage logo" className="h-[65px] w-[110px] rounded-md cursor-pointer" onClick={() => router?.push("/")} />
+                    <Image src="/logos/Indian-heritage-3.png" width={75} height={75} alt="indian heritage logo" className="h-[65px] w-[110px] rounded-md cursor-pointer" onClick={() => router?.push("/")} />
                     <p onClick={() => setOpenSidebar(!openSidebar)} className='cursor-pointer'>
                         <X />
                     </p>

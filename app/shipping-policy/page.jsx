@@ -87,7 +87,7 @@ const privacyPolicyContent = [
         content: [
             {
                 type: "list-item",
-                content: "If you have any questions or concerns regarding our shipping policy, please contact us at info@indianheritage.eu. We are dedicated to providing excellent customer service and will do our best to assist you."
+                content: "If you have any questions or concerns regarding our shipping policy, please contact us at indianheritage.eu@gmail.com. We are dedicated to providing excellent customer service and will do our best to assist you."
             }
         ]
     },

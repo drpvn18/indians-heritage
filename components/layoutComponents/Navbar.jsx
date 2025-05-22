@@ -38,7 +38,7 @@ export default function Navbar() {
             <div className={styles.navbar} onMouseLeave={() => setActiveCategory("")}>
                 <div className="flex justify-start items-center gap-[10px]">
                     <div className={styles.menuItem} onClick={() => setOpenSidebar(true)}>
-                        <Menu strokeWidth={2} size={32} color='#FFFFFF' />
+                        <Menu strokeWidth={2} size={24} color='#FFFFFF' />
                     </div>
                     {
                         openSearchPopup ? (

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animated Food Truck</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to top, #87ceeb, #e0f7ff);
+            overflow-x: hidden;
+        }
+
+        .road {
+            position: relative;
+            width: 100%;
+            height: 200px;
+            background: #444;
+        }
+
+        .truck {
+            position: absolute;
+            bottom: 70px;
+            left: -300px;
+            width: 220px;
+            height: 110px;
+            background: #ff6600;
+            border-radius: 10px 10px 5px 5px;
+            animation: moveTruck 12s linear infinite;
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Truck window and food banner */
+        .truck::before {
+            content: "";
+            position: absolute;
+            top: 10px;
+            left: 15px;
+            width: 60px;
+            height: 35px;
+            background: #fff;
+            border-radius: 3px;
+            box-shadow: 70px 0 #222;
+        }
+
+        .banner {
+            position: absolute;
+            top: -25px;
+            left: 50px;
+            background: #ffe600;
+            color: #222;
+            padding: 3px 8px;
+            font-size: 14px;
+            font-weight: bold;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+        }
+
+        .wheel {
+            position: absolute;
+            bottom: -15px;
+            width: 30px;
+            height: 30px;
+            background: #111;
+            border: 3px solid #888;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+        }
+
+        .wheel.front {
+            left: 30px;
+        }
+
+        .wheel.back {
+            right: 30px;
+        }
+
+        /* Smoke */
+        .smoke {
+            position: absolute;
+            bottom: 90px;
+            left: -20px;
+            width: 10px;
+            height: 10px;
+            background: #ccc;
+            border-radius: 50%;
+            opacity: 0.7;
+            animation: smokeRise 2s infinite ease-in-out;
+        }
+
+        @keyframes moveTruck {
+            0% {
+                left: -250px;
+            }
+
+            100% {
+                left: 110%;
+            }
+        }
+
+        @keyframes spin {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        @keyframes smokeRise {
+            0% {
+                transform: translate(0, 0) scale(1);
+                opacity: 0.6;
+            }
+
+            100% {
+                transform: translate(-30px, -60px) scale(2);
+                opacity: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="road">
+        <div class="truck">
+            <div class="banner">FOOD TRUCK</div>
+            <div class="wheel front"></div>
+            <div class="wheel back"></div>
+            <div class="smoke"></div>
+        </div>
+    </div>
+</body>
+
+</html>
