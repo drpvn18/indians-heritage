@@ -53,7 +53,7 @@ export default function WhyIndianHeritage() {
                     Why Indian Heritage?
                 </div>
 
-                <div ref={videoContainerRef} className="w-[100%] sm:w-[80%] mt-[50px] mb-[75px] mx-auto">
+                <div ref={videoContainerRef} className="w-[100%] sm:w-[80%] mt-[30px] mb-[50px] mx-auto">
                     <video
                         ref={videoRef}
                         width="100%"
