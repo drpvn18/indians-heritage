@@ -69,16 +69,18 @@ export default function ProductCard({ productDetails }) {
     }
 
     return (
-        <div>
-            <div onClick={handleProductRedirect} style={{ cursor: 'pointer', position: 'relative' }}>
-                <Image src={`${productDetails?.images[0]?.url}`} alt={`${productDetails?.images[0]?.alt}`} width={150} height={150} priority className="py-[5px] mx-auto h-[150px] w-[150px] sm:h-[250px] sm:w-[250px] relative" />
-                {
-                    (productDetails?.discount?.value && parseFloat(productDetails?.discount?.value) !== 0) ? (
-                        <div className="absolute top-[10px] right-[10px] bg-[#EA5F28] rounded-md text-white px-[5px] py-[5px] text-[15px]">
-                            <span>{productDetails?.discount?.value}% Off</span>
-                        </div>
-                    ) : ""
-                }
+        <div className="w-[150px] sm:w-[250px] mx-auto">
+            <div onClick={handleProductRedirect} className="cursor-pointer">
+                <div className="relative mx-auto h-[150px] sm:h-[250px]">
+                    <Image src={`${productDetails?.images[0]?.url}`} alt={`${productDetails?.images[0]?.alt}`} width={150} height={150} priority className="py-[5px] w-[100%] h-[100%]" />
+                    {
+                        (productDetails?.discount?.value && parseFloat(productDetails?.discount?.value) !== 0) ? (
+                            <div className="absolute top-[10px] right-[10px] bg-[#EA5F28] rounded-md text-white px-[5px] py-[5px] text-[14px]">
+                                <span>{productDetails?.discount?.value}% Off</span>
+                            </div>
+                        ) : ""
+                    }
+                </div>
                 {/* {
                     (productDetails?.product_type?.id) ? (
                         <div className="absolute top-[10px] left-[10px] bg-[#2CA966] rounded-md text-white px-[5px] py-[5px] text-[15px]">
@@ -87,7 +89,7 @@ export default function ProductCard({ productDetails }) {
                     ) : ""
                 } */}
             </div>
-            <div className="py-[5px] px-[10px] cursor-pointer relative">
+            <div className="py-[5px] px-[5px] cursor-pointer relative">
                 <p className={styles.product_name} onClick={handleProductRedirect}>
                     {productDetails?.name}
                 </p>
