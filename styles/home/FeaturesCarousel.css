@@ -57,14 +57,14 @@
     margin: 5px;
     border-radius: 50%;
     background-color: #FFFFFF;
-    border: 2px solid #00879E;
+    border: 2px solid #2CA966;
     cursor: pointer;
     transition: background-color 0.3s;
 }
 
 .features_carousel .embla__dot--selected {
-    background-color: #00879E;
-    border: 2px solid #00879E;
+    background-color: #2CA966;
+    border: 2px solid #2CA966;
 }
 
 @media (max-width:640px) {

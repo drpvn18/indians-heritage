@@ -62,7 +62,6 @@ export default function ProductCard({ productDetails }) {
 
             setAddingProduct(false);
             setOpenCart(true);
-
         } catch (e) {
             console.log(e);
         }

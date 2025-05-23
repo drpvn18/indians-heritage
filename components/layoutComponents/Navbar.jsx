@@ -29,8 +29,8 @@ export default function Navbar() {
     }, [mouseOnNavbar, mouseOnDropdown]);
 
     useEffect(() => {
-        console.log(pathname);
         setActiveCategory("");
+        setOpenSidebar(false);
     }, [pathname])
 
     return (
@@ -38,7 +38,7 @@ export default function Navbar() {
             <div className={styles.navbar} onMouseLeave={() => setActiveCategory("")}>
                 <div className="flex justify-start items-center gap-[10px]">
                     <div className={styles.menuItem} onClick={() => setOpenSidebar(true)}>
-                        <Menu strokeWidth={2} size={24} color='#FFFFFF' />
+                        <Menu strokeWidth={2} size={28} color='#FFFFFF' />
                     </div>
                     {
                         openSearchPopup ? (
@@ -54,10 +54,10 @@ export default function Navbar() {
                             ""
                         )
                     }
-                    <Image src="/logos/Indian-heritage-3.png" width={75} height={75} alt="indian heritage logo" className="h-[65px] w-[110px] rounded-md cursor-pointer" onClick={() => router?.push("/")} />
+                    <Image src="/logos/Indian-heritage-3.png" width={75} height={75} alt="indian heritage logo" className="h-[65px] w-[110px] rounded-[5px] cursor-pointer" onClick={() => router?.push("/")} />
                 </div>
 
-                <div className="h-[78px] flex align-middle" onMouseLeave={() => setMouseOnNavbar(false)}>
+                <div className="h-[76px] flex align-middle" onMouseLeave={() => setMouseOnNavbar(false)}>
                     <div className="my-auto" onMouseEnter={() => setMouseOnNavbar(true)}>
                         <div className={styles.categoryList}>
                             <div className={`${activeCategory === "gi" && styles.active_category} ${styles.category_item}`}

@@ -81,7 +81,6 @@ export default function ProductsByRegion({ stateSelected }) {
         setIsLoading(true);
         const handleFilterProducts = () => {
             const filteredList = productsList.filter((product) => (product?.origin?.state === stateSelected && product?.product_type?.id === "gi"));
-            console.log(filteredList);
             setFilteredList(filteredList);
         };
 

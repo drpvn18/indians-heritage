@@ -78,7 +78,13 @@
 
 .block {
     min-width: 125px;
-    margin: 10px 20px;
+    margin: 10px 20px 20px 20px;
+}
+
+.block_title {
+    margin: 10px 0;
+    font-size: 20px;
+    font-weight: 500;
 }
 
 .block_element {
@@ -86,7 +92,7 @@
     justify-content: flex-start;
     align-items: center;
     gap: 0px;
-    margin: 10px 0;
+    margin: 10px 0 10px 10px;
     font-size: 14px;
     font-weight: 500;
     width: max-content;
@@ -101,7 +107,17 @@
     transition: 400ms;
 }
 
-.block_element a:hover:after {
+.block_title a:after {
+    content: '';
+    width: 0px;
+    height: 2px;
+    display: block;
+    background: #FFDECB;
+    transition: 400ms;
+}
+
+.block_element a:hover:after,
+.block_title a:hover:after {
     width: 100%;
 }
 
@@ -116,6 +132,7 @@
 }
 
 .menuList::-webkit-scrollbar-thumb {
+    border-radius: 20px;
     -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
     background-color: #2CA966;
     cursor: pointer;

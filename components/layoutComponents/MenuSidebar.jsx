@@ -44,7 +44,7 @@ export default function MenuSidebar({ openSidebar, setOpenSidebar }) {
         //     "title": "Contact Us",
         //     "endpoint": "/contact-us"
         // }
-    ]
+    ];
 
     const MenuList = (
         <Box sx={{ width: 300, fontFamily: 'Lexend' }} role="presentation">
@@ -63,7 +63,9 @@ export default function MenuSidebar({ openSidebar, setOpenSidebar }) {
                                     <div onClick={() => setActiveCategory(activeCategory === item?.id ? "" : item?.id)}
                                         className={`${activeCategory === item?.id && styles.active_category} ${styles.category_item}`}>
                                         <p onClick={() => router.push(`${item?.endpoint}`)}>
-                                            {item?.title}
+                                            <Link href={`${item?.endpoint}`}>
+                                                {item?.title}
+                                            </Link>
                                         </p>
                                         {
                                             (categories[item?.id]?.categories?.length !== 0) ? (
@@ -78,22 +80,21 @@ export default function MenuSidebar({ openSidebar, setOpenSidebar }) {
                                             categories[activeCategory]?.categories?.map((category) => {
                                                 return (
                                                     <ul className={styles.block} key={category?.id}>
-                                                        <li className="font-semibold mb-[15px] text-xl">
-                                                            {category?.title}
+                                                        <li className={styles.block_title}>
+                                                            <Link href={`/${categories[activeCategory]?.endpoint}/${category?.endpoint}`}>
+                                                                {category?.title}
+                                                            </Link>
                                                         </li>
                                                         {
                                                             category?.sub_categories?.map(sub_category => {
                                                                 return (
                                                                     <li className={styles.block_element} key={sub_category?.id}>
                                                                         <ChevronRight size={18} />
-                                                                        <Link href={sub_category?.endpoint}>{sub_category?.title}</Link>
+                                                                        <Link href={`/${categories[activeCategory]?.endpoint}/${sub_category?.endpoint}`}>{sub_category?.title}</Link>
                                                                     </li>
                                                                 );
                                                             })
                                                         }
-                                                        <li className={styles.block_element}>
-                                                            <Link href={category?.endpoint}>view all</Link>
-                                                        </li>
                                                     </ul>
                                                 );
                                             })

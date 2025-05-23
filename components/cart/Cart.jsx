@@ -106,7 +106,6 @@ export default function Cart({ openCart, setOpenCart }) {
     }
 
     const handleInputChange = (product_key, count) => {
-        console.log(product_key, count);
         if (parseInt(count) && parseInt(count) > 0) {
             handleUpdateProductCount(cartItems[product_key], parseInt(count), "inputChange");
         } else {

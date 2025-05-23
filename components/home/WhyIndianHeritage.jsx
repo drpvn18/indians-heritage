@@ -10,7 +10,6 @@ export default function WhyIndianHeritage() {
     useEffect(() => {
         const observer = new IntersectionObserver(
             ([entry]) => {
-                console.log("In view:", entry.isIntersecting);
                 setInView(entry.isIntersecting);
             },
             {

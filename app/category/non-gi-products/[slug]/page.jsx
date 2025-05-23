@@ -60,7 +60,7 @@ export default function ProductCategory({ params }) {
         try {
             let temp = [];
             let state = stateSelected?.value || isValidState(stateParam) ? stateParam : null;
-            console.log(state);
+
             if (slug === "all") {
                 temp = products;
             } else if (slug === 'gi-products') {
