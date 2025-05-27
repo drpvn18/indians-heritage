@@ -31,6 +31,9 @@ export default function PromotionsCarousel() {
                     <div className="embla__viewport" ref={emblaRef}>
                         <div className="embla__container">
                             <div className="embla__slide">
+                                Made in 🇮🇳 products made with ❤️ for Europe
+                            </div>
+                            <div className="embla__slide">
                                 Why Wait? Authentic India Now Here!
                             </div>
                             <div className="embla__slide">

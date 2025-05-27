@@ -27,7 +27,7 @@ export default function PopularProducts() {
                 </div>
                 <div className="grid gap-4 grid-cols-[repeat(auto-fit,minmax(150px,1fr))] sm:grid-cols-[repeat(auto-fit,minmax(250px,1fr))] mt-[16px] mb-[48px]">
                     {
-                        productsList?.slice(0, 12)?.map((product, index) => {
+                        productsList?.slice(0, 15)?.map((product, index) => {
                             return (
                                 <div key={index} className="border-2 border-[#E1F5EB] bg-[#FFFFFF] hover:shadow-2xl">
                                     <ProductCard productDetails={product} />

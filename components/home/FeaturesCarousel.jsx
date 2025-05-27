@@ -59,6 +59,17 @@ export default function FeaturesCarousel() {
                                 onClick={() => router.push('/category/all')}
                             />
                         </div>
+                        <div className="embla__slide">
+                            <Image
+                                src='/images/banners/slide-2.png'
+                                width={300}
+                                height={200}
+                                alt={`Slide 1`}
+                                className="embla__image"
+                                priority={true}
+                                onClick={() => router.push('/category/all')}
+                            />
+                        </div>
                     </div>
                 </div>
 
