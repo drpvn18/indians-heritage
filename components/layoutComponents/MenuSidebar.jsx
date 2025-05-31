@@ -32,7 +32,13 @@ export default function MenuSidebar({ openSidebar, setOpenSidebar }) {
         {
             "id": "organic",
             "title": "Organic Products",
-            "endpoint": "/category/organic-products"
+            "endpoint": "/category/organic-products",
+        },
+        {
+            "id": "indian-jewellery",
+            "title": "Indian Jewellery",
+            "endpoint": "https://www.instagram.com/indianheritage.eu/",
+            "target": "_blank"
         },
         // {
         //     "id": "about-us",
@@ -62,8 +68,8 @@ export default function MenuSidebar({ openSidebar, setOpenSidebar }) {
                                 <div key={item?.id}>
                                     <div onClick={() => setActiveCategory(activeCategory === item?.id ? "" : item?.id)}
                                         className={`${activeCategory === item?.id && styles.active_category} ${styles.category_item}`}>
-                                        <p onClick={() => router.push(`${item?.endpoint}`)}>
-                                            <Link href={`${item?.endpoint}`}>
+                                        <p>
+                                            <Link href={`${item?.endpoint}`} target={`${item?.target === '_blank' ? '_blank' : '_self'}`}>
                                                 {item?.title}
                                             </Link>
                                         </p>

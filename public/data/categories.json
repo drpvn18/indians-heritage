@@ -330,6 +330,12 @@
       }
     ]
   },
+  "indian-jewellery": {
+    "id": "indian-jewellery",
+    "title": "Indian Jewellery`",
+    "endpoint": "https://www.instagram.com/indianheritage.eu/",
+    "categories": []
+  },
   "about-us": {
     "id": "about-us",
     "title": "About Us",

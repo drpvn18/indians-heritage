@@ -31,7 +31,12 @@ export default function Navbar() {
     useEffect(() => {
         setActiveCategory("");
         setOpenSidebar(false);
-    }, [pathname])
+    }, [pathname]);
+
+    const handleInstagramRedirect = () => {
+        window.open("https://www.instagram.com/indianheritage.eu/", "_blank");
+        return;
+    }
 
     return (
         <div className={styles.container}>
@@ -77,6 +82,13 @@ export default function Navbar() {
                             >
                                 Organic Products
                             </div>
+
+                            <div className={`${activeCategory === "indian-jewellery" && styles.active_category} ${styles.category_item}`}
+                                onMouseEnter={() => setActiveCategory("indian-jewellery")}
+                                onClick={handleInstagramRedirect}
+                            >
+                                Indian Jewellery
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -97,6 +109,7 @@ export default function Navbar() {
                 {
                     activeCategory !== "" && Categories[activeCategory]?.categories?.length !== 0 && (
                         <div className={styles.detailed_category} onMouseEnter={() => setMouseOnDropdown(true)} onMouseLeave={() => setMouseOnDropdown(false)}>
+                            a
                             <DetailedCategory dropdown_data={Categories[activeCategory]} setMouseOnDropdown={setMouseOnDropdown} />
                         </div>
                     )
