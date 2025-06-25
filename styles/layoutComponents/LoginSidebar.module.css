@@ -1,0 +1,48 @@
+.loginTitle {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    gap: 10px;
+    padding: 20px 20px;
+    font-weight: 600;
+}
+
+.form {
+    margin: 20px;
+}
+
+.formElement {
+    margin: 20px 0;
+}
+
+.formElement label {
+    font-size: 16px;
+}
+
+.formElement input {
+    border: 2px solid #b8b8b8;
+    border-radius: 5px;
+    width: 100%;
+    padding: 7px 15px;
+    outline: none;
+    margin: 5px 0 0 0;
+}
+
+.formElement input:focus {
+    border: 2px solid var(--secondary-bg);
+}
+
+.formElement button {
+    width: 100%;
+    background-color: var(--main-bg);
+    cursor: pointer;
+    color: #FFF;
+    padding: 5px 0;
+    border-radius: 5px;
+    font-size: 18px;
+    transition: 0.25s all ease-in-out;
+}
+
+.formElement button:hover {
+    background-color: var(--secondary-bg);
+}

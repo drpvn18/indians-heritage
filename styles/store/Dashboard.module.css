@@ -1,0 +1,35 @@
+.cardSection {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 20px 0 40px 0;
+    gap: 40px;
+}
+
+.cardItem {
+    width: 200px;
+    height: 130px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    border-radius: 10px;
+    border: 2px solid #1A4265;
+    cursor: pointer;
+}
+
+.cardItem:hover {
+    background-color: #1A4265;
+    color: white;
+}
+
+.count {
+    font-size: 40px;
+    font-weight: 500;
+}
+
+.title {
+    font-size: 20px;
+}

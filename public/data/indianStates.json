@@ -1,0 +1,218 @@
+{
+  "AP": {
+    "name": "Andhra Pradesh",
+    "code": "AP",
+    "color": "#008080",
+    "description": "Known for Tirupati temple, Kuchipudi dance, and rich coastal cuisine."
+  },
+  "AR": {
+    "name": "Arunachal Pradesh",
+    "code": "AR",
+    "color": "#228B22",
+    "description": "Famous for its scenic beauty, tribal culture, and Tawang Monastery."
+  },
+  "AS": {
+    "name": "Assam",
+    "code": "AS",
+    "color": "#808000",
+    "description": "Known for Assam tea, silk, and Kaziranga National Park."
+  },
+  "BR": {
+    "name": "Bihar",
+    "code": "BR",
+    "color": "#A0522D",
+    "description": "Birthplace of Buddhism and known for historical sites like Nalanda and Bodh Gaya."
+  },
+  "CG": {
+    "name": "Chhattisgarh",
+    "code": "CG",
+    "color": "#006400",
+    "description": "Known for tribal handicrafts, Chitrakote Falls, and temples."
+  },
+  "GA": {
+    "name": "Goa",
+    "code": "GA",
+    "color": "#1E90FF",
+    "description": "Famous for beaches, Portuguese heritage, and vibrant nightlife."
+  },
+  "GJ": {
+    "name": "Gujarat",
+    "code": "GJ",
+    "color": "#DAA520",
+    "description": "Known for Gir lions, Garba dance, and rich textile industry."
+  },
+  "HR": {
+    "name": "Haryana",
+    "code": "HR",
+    "color": "#BDB76B",
+    "description": "Known for its sports culture, agriculture, and heritage sites."
+  },
+  "HP": {
+    "name": "Himachal Pradesh",
+    "code": "HP",
+    "color": "#4682B4",
+    "description": "Famous for hill stations like Shimla and Manali, and apple orchards."
+  },
+  "JH": {
+    "name": "Jharkhand",
+    "code": "JH",
+    "color": "#2E8B57",
+    "description": "Known for rich mineral resources, waterfalls, and tribal culture."
+  },
+  "KA": {
+    "name": "Karnataka",
+    "code": "KA",
+    "color": "#4B0082",
+    "description": "Famous for Hampi, Mysore silk, and IT hub Bengaluru."
+  },
+  "KL": {
+    "name": "Kerala",
+    "code": "KL",
+    "color": "#008000",
+    "description": "Known for backwaters, Ayurveda, and Kathakali dance."
+  },
+  "MP": {
+    "name": "Madhya Pradesh",
+    "code": "MP",
+    "color": "#708090",
+    "description": "Famous for Khajuraho temples, wildlife sanctuaries, and forts."
+  },
+  "MH": {
+    "name": "Maharashtra",
+    "code": "MH",
+    "color": "#FFA500",
+    "description": "Known for Bollywood, Mumbai, and historic sites like Ajanta-Ellora."
+  },
+  "MN": {
+    "name": "Manipur",
+    "code": "MN",
+    "color": "#800080",
+    "description": "Famous for classical dance, Loktak Lake, and indigenous culture."
+  },
+  "ML": {
+    "name": "Meghalaya",
+    "code": "ML",
+    "color": "#3CB371",
+    "description": "Known for living root bridges, Cherrapunji, and matrilineal society."
+  },
+  "MZ": {
+    "name": "Mizoram",
+    "code": "MZ",
+    "color": "#40E0D0",
+    "description": "Famous for bamboo crafts, hills, and vibrant tribal festivals."
+  },
+  "NL": {
+    "name": "Nagaland",
+    "code": "NL",
+    "color": "#008B8B",
+    "description": "Known for Hornbill Festival and diverse tribal heritage."
+  },
+  "OR": {
+    "name": "Odisha",
+    "code": "OR",
+    "color": "#FF7F50",
+    "description": "Famous for Jagannath Temple, classical dance Odissi, and Pattachitra art."
+  },
+  "PB": {
+    "name": "Punjab",
+    "code": "PB",
+    "color": "#DC143C",
+    "description": "Known for Golden Temple, bhangra dance, and rich cuisine."
+  },
+  "RJ": {
+    "name": "Rajasthan",
+    "code": "RJ",
+    "color": "#EC4899",
+    "description": "Famous for palaces, deserts, and folk arts."
+  },
+  "SK": {
+    "name": "Sikkim",
+    "code": "SK",
+    "color": "#32CD32",
+    "description": "Known for organic farming, monasteries, and Mt. Kanchenjunga."
+  },
+  "TN": {
+    "name": "Tamil Nadu",
+    "code": "TN",
+    "color": "#800000",
+    "description": "Famous for classical music, temples, and film industry."
+  },
+  "TG": {
+    "name": "Telangana",
+    "code": "TG",
+    "color": "#C71585",
+    "description": "Known for Charminar, Hyderabadi biryani, and pearl trade."
+  },
+  "TR": {
+    "name": "Tripura",
+    "code": "TR",
+    "color": "#00CED1",
+    "description": "Famous for bamboo products, Ujjayanta Palace, and tribal culture."
+  },
+  "UP": {
+    "name": "Uttar Pradesh",
+    "code": "UP",
+    "color": "#A52A2A",
+    "description": "Known for the Taj Mahal, Varanasi, and Awadhi cuisine."
+  },
+  "UK": {
+    "name": "Uttarakhand",
+    "code": "UK",
+    "color": "#4169E1",
+    "description": "Famous for pilgrimage sites like Haridwar and scenic hill stations."
+  },
+  "WB": {
+    "name": "West Bengal",
+    "code": "WB",
+    "color": "#8B0000",
+    "description": "Famous for handloom textiles, sweets, and artistic crafts."
+  },
+  "AN": {
+    "name": "Andaman and Nicobar Islands",
+    "code": "AN",
+    "color": "#00BFFF",
+    "description": "Known for pristine beaches, coral reefs, and marine biodiversity."
+  },
+  "CH": {
+    "name": "Chandigarh",
+    "code": "CH",
+    "color": "#808080",
+    "description": "Famous for modern architecture and planned urban design."
+  },
+  "DN": {
+    "name": "Dadra and Nagar Haveli and Daman and Diu",
+    "code": "DN",
+    "color": "#D2691E",
+    "description": "Known for Portuguese heritage, beaches, and serene landscapes."
+  },
+  "DL": {
+    "name": "Delhi",
+    "code": "DL",
+    "color": "#000080",
+    "description": "Capital of India, famous for monuments, cuisine, and political importance."
+  },
+  "JK": {
+    "name": "Jammu and Kashmir",
+    "code": "JK",
+    "color": "#191970",
+    "description": "Known for scenic beauty, Kashmiri handicrafts, and houseboats."
+  },
+  "LA": {
+    "name": "Ladakh",
+    "code": "LA",
+    "color": "#2F4F4F",
+    "description": "Famous for monasteries, high-altitude deserts, and adventure tourism."
+  },
+  "LD": {
+    "name": "Lakshadweep",
+    "code": "LD",
+    "color": "#00FFFF",
+    "description": "Known for coral islands, lagoons, and untouched marine life."
+  },
+  "PY": {
+    "name": "Puducherry",
+    "code": "PY",
+    "color": "#FF6347",
+    "description": "Famous for French colonial architecture and tranquil beaches."
+  }
+}

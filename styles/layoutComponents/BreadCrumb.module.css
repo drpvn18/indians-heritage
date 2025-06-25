@@ -1,0 +1,59 @@
+.container {
+    width: 100%;
+    background-color: #E1F5EB;
+    border-bottom: 1px solid #FFDECB;
+}
+
+.breadCrumb {
+    margin: 0 auto;
+    max-width: 1400px;
+    padding: 20px 10px;
+}
+
+.breadCrumbContent {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+
+    font-weight: 500;
+    color: gray;
+}
+
+.activePart {
+    color: #F26522;
+    font-weight: 500;
+}
+
+.breadCrumbPart {
+    max-width: 600px;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+@media (max-width:640px) {
+    .breadCrumbPart {
+        max-width: 350px;
+    }
+}
+
+@media (max-width:530px) {
+    .breadCrumbPart {
+        max-width: 230px;
+    }
+}
+
+@media (max-width:420px) {
+    .breadCrumbPart {
+        max-width: 125px;
+    }
+}
+
+@media (max-width:300px) {
+    .breadCrumbPart {
+        max-width: 100px;
+    }
+}

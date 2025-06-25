@@ -1,0 +1,50 @@
+.form_element {
+    flex-grow: 1 0 200px;
+    margin: 0 0 15px 0;
+}
+
+.form_element input {
+    width: 100%;
+    border: 2px solid #b3b3b3;
+    border-radius: 4px;
+    padding: 10px;
+    height: 46px;
+    margin: 4px 0;
+    outline: none;
+    min-width: 50px;
+}
+
+.form_element textarea {
+    width: 100%;
+    border: 2px solid #b3b3b3;
+    border-radius: 4px;
+    padding: 10px;
+    margin: 4px 0;
+    outline: none;
+}
+
+.form_element input:focus {
+    background-color: #fff;
+}
+
+.form_element textarea:focus {
+    background-color: #fff;
+}
+
+.section_title {
+    font-size: 32px;
+    margin: 20px 0 10px 0;
+    border-bottom: 1px dashed #b3b3b3;
+    background-color: #e2e2e2;
+    font-weight: 350;
+    padding: 0 10px;
+}
+
+.form_sub_container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    gap: 25px;
+    width: 100%;
+    padding: 10px 10px;
+}

@@ -1,0 +1,61 @@
+{
+  "id": "",
+  "name": "",
+  "slug": "",
+  "description": "",
+  "brand": {
+    "id": "",
+    "name": ""
+  },
+  "product_type": {
+    "id": "",
+    "name": "",
+    "slug": ""
+  },
+  "category": {
+    "id": "",
+    "name": "",
+    "main_category": {
+      "id": "",
+      "name": ""
+    }
+  },
+  "origin": {
+    "country": "",
+    "state": "",
+    "manufacturer": ""
+  },
+  "images": [
+    {
+      "url": "",
+      "alt": "",
+      "mediaType": ""
+    }
+  ],
+  "variation": {
+    "attributes": {
+      "color": ""
+    },
+    "price": {
+      "currency": "EUR",
+      "amount": 0
+    },
+    "stock": {
+      "quantity": 0
+    },
+    "weight_label": "",
+    "absolute_weight": 0,
+    "dimensions": {
+      "length": "",
+      "width": "",
+      "height": ""
+    }
+  },
+  "discount": {
+    "type": "",
+    "value": 0
+  },
+  "tags": [],
+  "status": "",
+  "created_at": ""
+}
