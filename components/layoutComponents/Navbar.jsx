@@ -4,7 +4,7 @@ import React, { useContext, useEffect, useState } from "react";
 import styles from "./../../styles/layoutComponents/Navbar.module.css";
 import Image from "next/image";
 import { Menu, ShoppingCart, Search } from "lucide-react";
-import { usePathname, useRouter } from "next/navigation";
+import { usePathname } from "next/navigation";
 import DetailedCategory from "./DetailedCategory";
 import Categories from "./../../public/data/categories.json";
 import Cart from "../cart/Cart";
@@ -15,7 +15,6 @@ import Link from "next/link";
 import FoodTruck from "../icons/FoodTruck";
 
 export default function Navbar() {
-    const router = useRouter();
     const pathname = usePathname();
     const { getCartCount } = useContext(CartContext);
     const [activeCategory, setActiveCategory] = useState("");
@@ -37,7 +36,7 @@ export default function Navbar() {
 
     return (
         <div className={styles.container}>
-            <div className={styles.navbar} onMouseLeave={() => setActiveCategory("")}>
+            <nav className={styles.navbar} onMouseLeave={() => setActiveCategory("")}>
                 <div className="flex justify-start items-center gap-[10px]">
                     <div className={styles.menuItem} onClick={() => setOpenSidebar(true)}>
                         <Menu strokeWidth={2} size={28} color='#FFFFFF' />
@@ -56,7 +55,9 @@ export default function Navbar() {
                             ""
                         )
                     }
-                    <Image src="/logos/Indian-heritage-3.png" width={75} height={75} alt="indian heritage logo" className="h-[65px] w-[110px] rounded-[5px] cursor-pointer" onClick={() => router?.push("/")} />
+                    <Link href="/">
+                        <Image src="/logos/Indian-heritage-3.png" width={75} height={75} alt="indian heritage logo" className="h-[65px] w-[110px] rounded-[5px] cursor-pointer" />
+                    </Link>
                 </div>
 
                 <div className="h-[76px] flex align-middle" onMouseLeave={() => setMouseOnNavbar(false)}>
@@ -117,7 +118,7 @@ export default function Navbar() {
                         </div>
                     )
                 }
-            </div>
+            </nav>
             {
                 openCart && (
                     <Cart openCart={openCart} setOpenCart={setOpenCart} />
