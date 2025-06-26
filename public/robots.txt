@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://www.indianheritage.eu
+
+# Sitemaps
+Sitemap: https://www.indianheritage.eu/sitemap.xml
