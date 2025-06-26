@@ -6,6 +6,7 @@ import Footer from "@/components/layoutComponents/Footer";
 import BreadCrumb from "@/components/layoutComponents/BreadCrumb";
 import { CartProvider } from "./CartContext";
 import { Analytics } from '@vercel/analytics/next';
+import { SpeedInsights } from "@vercel/speed-insights/next"
 import SocialMedia from "@/components/layoutComponents/SocialMedia";
 
 export const metadata = {
@@ -28,6 +29,7 @@ export default function RootLayout({ children }) {
 					{children}
 					<Footer />
 					<Analytics />
+					<SpeedInsights />
 				</CartProvider>
 			</body>
 		</html>
