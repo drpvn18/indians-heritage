@@ -3,7 +3,8 @@
 import UserIcon from "@/components/icons/UserIcon";
 import Login from "@/components/layoutComponents/Login";
 import StoreProductCard from "@/components/products/StoreProductCard";
-import { Loader, Plus, Power } from "lucide-react";
+import StoreProductSearch from "@/components/store/products/ProductSearch";
+import { Loader, Plus, Power, Search } from "lucide-react";
 import { useRouter } from "next/navigation";
 import React, { useEffect, useState } from "react";
 
@@ -15,6 +16,7 @@ export default function StoreProducts() {
     const [showLoginPopup, setShowLoginPopup] = useState(true);
     const [userAuthenticated, setUserAuthenticated] = useState(null);
     const [logoutStatus, setLogoutStatus] = useState(false);
+    const [openSearchPopup, setOpenSearchPopup] = useState(false);
 
     useEffect(() => {
         const fetchUserDetails = async () => {
@@ -115,7 +117,7 @@ export default function StoreProducts() {
                             </div>
                         ) : (
                             <div>
-                                <div className="flex justify-between items-center flex-wrap gap-[10px] my-[20px]">
+                                <div className="flex justify-between items-center flex-wrap gap-[10px] mt-[10px] mb-[20px]">
                                     <div className="text-gray-600">
                                         Hey,
                                         <span className="text-[20px] px-2 text-black">
@@ -123,19 +125,19 @@ export default function StoreProducts() {
                                         </span>
                                     </div>
                                     <div>
-                                        <button className="border-2 border-red-600 rounded-sm px-[10px] py-[5px] cursor-pointer hover:bg-red-600 text-red-600 hover:text-white text-xl" onClick={handleLogout}>
+                                        <div className="rounded-sm px-[10px] py-[10px] cursor-pointer hover:bg-red-600 text-red-600 hover:text-white text-xl" onClick={handleLogout}>
                                             {
                                                 logoutStatus ? (
                                                     <div className="w-6 h-6 animate-spin">
                                                         <Loader />
                                                     </div>
                                                 ) : (
-                                                    <span className="flex justify-center items-center gap-[6px]">
-                                                        <Power />
+                                                    <span>
+                                                        <Power strokeWidth={3} />
                                                     </span>
                                                 )
                                             }
-                                        </button>
+                                        </div>
                                     </div>
                                 </div>
                                 {
@@ -153,6 +155,9 @@ export default function StoreProducts() {
                                             <div className="flex justify-between items-center gap-1 flex-wrap text-gray-600 mt-[5px] mb-[15px]">
                                                 <p>Showing {productsCount || 0} products</p>
                                                 <div className="flex justify-end gap-[15px] items-center text-[var(--main-bg)]">
+                                                    <div className="rounded-sm px-[6px] py-[4px] cursor-pointer hover:bg-[var(--main-bg)] hover:text-white" onClick={() => setOpenSearchPopup(true)}>
+                                                        <Search strokeWidth={2} size={32} />
+                                                    </div>
                                                     <div className="border-2 border-[var(--main-bg)] rounded-sm px-[6px] py-[4px] cursor-pointer hover:bg-[var(--main-bg)] hover:text-white flex justify-center items-center gap-[2px] text-[18px]" onClick={() => router.push("/store/products/new")}>
                                                         <Plus strokeWidth={3} /> Create
                                                     </div>
@@ -182,6 +187,11 @@ export default function StoreProducts() {
                     }
                 </div>
             </div>
+            {
+                openSearchPopup && (
+                    <StoreProductSearch openSearchPopup={openSearchPopup} setOpenSearchPopup={setOpenSearchPopup} />
+                )
+            }
         </div>
     );
 }

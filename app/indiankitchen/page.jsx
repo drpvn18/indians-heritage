@@ -1,12 +1,16 @@
 "use client";
 
-import React from "react";
+import React, { useEffect } from "react";
 import styles from "./../../styles/indiankitchen/IndianKitchen.module.css";
 import Image from "next/image";
 import Link from "next/link";
 import "./../../styles/home/IndianKitchenCarousel.css";
 
 export default function IndianKitchen() {
+    useEffect(() => {
+        document.title = "Indian Kitchen - Indian Heritage | Europe's first Indian GI tagged & organic store";
+    }, []);
+
     return (
         <div className={styles.container}>
             <div className={styles.indian_kitchen}>

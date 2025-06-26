@@ -35,11 +35,6 @@ export default function Navbar() {
         setOpenSidebar(false);
     }, [pathname]);
 
-    const handleInstagramRedirect = () => {
-        window.open("https://www.instagram.com/indianheritage.eu/", "_blank");
-        return;
-    }
-
     return (
         <div className={styles.container}>
             <div className={styles.navbar} onMouseLeave={() => setActiveCategory("")}>
@@ -67,34 +62,30 @@ export default function Navbar() {
                 <div className="h-[76px] flex align-middle" onMouseLeave={() => setMouseOnNavbar(false)}>
                     <div className="my-auto" onMouseEnter={() => setMouseOnNavbar(true)}>
                         <div className={styles.categoryList}>
-                            <div className={`${activeCategory === "gi" && styles.active_category} ${styles.category_item}`}
-                                onMouseEnter={() => setActiveCategory("gi")}
-                                onClick={() => router.push("/category/gi-products")}
-                            >
-                                GI Tagged Products
+                            <div>
+                                <Link href="/category/gi-products" className={`${activeCategory === "gi" && styles.active_category} ${styles.category_item}`} onMouseEnter={() => setActiveCategory("gi")}>
+                                    GI Tagged Products
+                                </Link>
                             </div>
 
-                            {/* <div className={`${activeCategory === "non-gi" && styles.active_category} ${styles.category_item}`} onMouseEnter={() => setActiveCategory("non-gi")} onClick={() => router.push("/category/non-gi-products")}>
-                                Non-GI Products
+                            {/* <div>
+                                <Link href="/category/non-gi-products" className={`${activeCategory === "non-gi" && styles.active_category} ${styles.category_item}`} onMouseEnter={() => setActiveCategory("non-gi")}>
+                                    Non-GI Products
+                                </Link>
                             </div> */}
 
-                            <div className={`${activeCategory === "organic" && styles.active_category} ${styles.category_item}`}
-                                onMouseEnter={() => setActiveCategory("organic")}
-                                onClick={() => router.push("/category/organic-products")}
-                            >
-                                Organic Products
+                            <div>
+                                <Link href="/category/organic-products" className={`${activeCategory === "organic" && styles.active_category} ${styles.category_item}`} onMouseEnter={() => setActiveCategory("organic")}>
+                                    Organic Products
+                                </Link>
                             </div>
-
-                            <div className={`${activeCategory === "indian-jewellery" && styles.active_category} ${styles.category_item}`}
-                                onMouseEnter={() => setActiveCategory("indian-jewellery")}
-                                onClick={handleInstagramRedirect}
-                            >
-                                Indian Jewellery
+                            <div>
+                                <Link href="https://www.instagram.com/indianheritage.eu/" target="_blank" className={`${activeCategory === "indian-jewellery" && styles.active_category} ${styles.category_item}`} onMouseEnter={() => setActiveCategory("indian-jewellery")}>
+                                    Indian Jewellery
+                                </Link>
                             </div>
                             <div className="flex justify-center items-center gap-[5px]">
-                                <Link href="/indiankitchen" target="_blank" className={`${activeCategory === "indian-kitchen" && styles.active_category} ${styles.category_item}`}
-                                    onMouseEnter={() => setActiveCategory("indian-kitchen")}
-                                >
+                                <Link href="/indiankitchen" target="_blank" className={`${activeCategory === "indian-kitchen" && styles.active_category} ${styles.category_item}`} onMouseEnter={() => setActiveCategory("indian-kitchen")}>
                                     Indian Kitchen
                                 </Link>
                                 <FoodTruck height={32} width={32} color="#FFFFFF" />

@@ -22,11 +22,6 @@ const productTypes = [
         value: "organic",
         label: "Organic Product",
         slug: "organic-products"
-    },
-    {
-        value: "indian-jewellery",
-        label: "Indian Jewellery",
-        slug: "indian-jewellery"
     }
 ]
 

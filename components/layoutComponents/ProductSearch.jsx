@@ -5,7 +5,7 @@ import Box from '@mui/material/Box';
 import Modal from '@mui/material/Modal';
 import { Backdrop } from '@mui/material';
 import styles from "./../../styles/layoutComponents/ProductSearch.module.css";
-import { ShoppingCart, X } from 'lucide-react';
+import { Loader, ShoppingCart, X } from 'lucide-react';
 import { useRouter } from 'next/navigation';
 import Image from 'next/image';
 import { CartContext } from '@/app/CartContext';
@@ -22,9 +22,11 @@ export default function ProductSearch({ openSearchPopup, setOpenSearchPopup }) {
     const [addingProduct, setAddingProduct] = useState(false);
     const [openCart, setOpenCart] = useState(false);
     const [products, setProducts] = useState([]);
+    const [loadingProducts, setLoadingProducts] = useState(false);
 
     useEffect(() => {
         const fetchProducts = async () => {
+            setLoadingProducts(true);
             try {
                 const response = await fetch('/api/fetch_products');
                 const res = await response.json();
@@ -37,6 +39,7 @@ export default function ProductSearch({ openSearchPopup, setOpenSearchPopup }) {
                 setProducts([]);
                 console.error('Error fetching products:', error);
             }
+            setLoadingProducts(false);
         };
         fetchProducts();
     }, []);
@@ -89,6 +92,7 @@ export default function ProductSearch({ openSearchPopup, setOpenSearchPopup }) {
     }, [openSearchPopup])
 
     useEffect(() => {
+        setLoadingProducts(true);
         if (searchTerm) {
             const temp = products.filter((product) => {
                 const term = (product?.name || "") + " " + (product?.category?.name || "") + " " + (product?.description || "");
@@ -98,6 +102,7 @@ export default function ProductSearch({ openSearchPopup, setOpenSearchPopup }) {
         } else {
             setFilteredProducts([]);
         }
+        setLoadingProducts(false);
     }, [searchTerm])
 
     const handleAddProductToCart = (product) => {
@@ -140,7 +145,7 @@ export default function ProductSearch({ openSearchPopup, setOpenSearchPopup }) {
     }
 
     const handleProductRedirect = (product) => {
-        router?.push(`/product/${product?.category?.slug}/${product?.slug}`);
+        router?.push(`/product/${product?.category?.id}/${product?.slug}`);
         setOpenSearchPopup(false);
         return;
     }
@@ -173,78 +178,98 @@ export default function ProductSearch({ openSearchPopup, setOpenSearchPopup }) {
                 }}
             >
                 <Box sx={modalStyle}>
-                    <div className={styles.productSearch}>
-                        <div className={styles.searchInput}>
-                            <input ref={inputRef} placeholder='Search for Products...' value={searchTerm} onChange={(e) => setSearchTerm(e.target.value)} />
-                        </div>
-                        <div className={styles.close} onClick={handleClose}>
-                            <X size={32} />
-                        </div>
-                    </div>
-                    <div className={styles.filteredProductsList}>
-                        <div>
-                            {
-                                (searchTerm?.length === 0) ? (
-                                    <div className={styles.noProductFound}>
-                                        Type to search for products.
-                                    </div>
-                                ) : (
-                                    (filteredProducts.length === 0) && (
-                                        <div className={styles.noProductFound}>
-                                            No Product Found.
-                                        </div>
-                                    )
-                                )
-                            }
-                        </div>
+                    <div>
                         {
-                            filteredProducts?.map((product, index) => {
-                                return (
-                                    <div key={index} className="grid grid-cols-12 gap-[5px] px-[5px] py-[10px] border-b border-[#2CA966] select-none">
-                                        <div className="col-span-3"
-                                            onClick={() => handleProductRedirect(product)}
-                                        >
+                            loadingProducts ? (
+                                <div className="flex flex-col justify-center items-center my-[15%]" >
+                                    <div className="w-6 h-6 animate-spin text-black">
+                                        <Loader />
+                                    </div>
+                                    <p className="text-[18px] mt-[5px]">
+                                        Loading products
+                                    </p>
+                                </div>
+                            ) : (
+                                <div>
+                                    <div className={styles.productSearch}>
+                                        <div className={styles.searchInput}>
+                                            <input ref={inputRef} placeholder='Search for Products...' value={searchTerm} onChange={(e) => setSearchTerm(e.target.value)} />
+                                        </div>
+                                        <div className={styles.close} onClick={handleClose}>
+                                            <X size={32} />
+                                        </div>
+                                    </div>
+                                    <div className={styles.filteredProductsList}>
+                                        <div>
                                             {
-                                                (product?.images?.length > 0 && product?.images[0]?.url) && (
-                                                    <Image src={`${product?.images[0]?.url || ""}`} alt={`${product?.images[0]?.alt || product?.name}`} width={100} height={100} priority className="w-[75px] mx-auto h-[75px] cursor-pointer" />
+                                                (searchTerm?.length === 0) ? (
+                                                    <div className={styles.noProductFound}>
+                                                        Type to search for products.
+                                                    </div>
+                                                ) : (
+                                                    (filteredProducts.length === 0) && (
+                                                        <div className={styles.noProductFound}>
+                                                            No Product Found.
+                                                        </div>
+                                                    )
                                                 )
                                             }
                                         </div>
-                                        <div className="col-span-9 relative">
-                                            <p className={styles.product_name} onClick={() => handleProductRedirect(product)}>
-                                                {product?.name}
-                                            </p>
-                                            <p className="py-[2px]">
-                                                <span className="pr-[5px] text-[22px]">
-                                                    {getCurrencySymbol(product?.variation?.price?.currency)}
-                                                </span>
-                                                <span className="pr-[5px] text-[22px]">
-                                                    {getDiscountedPrice(product?.variation?.price?.amount, product?.discount)}
-                                                </span>
-                                                <span className="line-through text-[16px] text-gray-700">
-                                                    {product?.variation?.price?.amount}
-                                                </span>
-                                            </p>
-                                            <button onClick={() => handleAddProductToCart(product)} className="text-white bg-[#EA5F28] p-2 rounded-md cursor-pointer flex gap-[5px] flex-nowrap justify-center items-center absolute right-0 bottom-0">
-                                                {
-                                                    addingProduct ? (
-                                                        <div className={loading_styles.loader} />
-                                                    ) : (
-                                                        <ShoppingCart size={24} />
-                                                    )
-                                                }
-                                            </button>
-                                        </div>
+                                        {
+                                            filteredProducts?.map((product, index) => {
+                                                return (
+                                                    <div key={index} className="grid grid-cols-12 gap-[5px] px-[5px] py-[10px] border-b border-[#2CA966] select-none">
+                                                        <div className="col-span-3"
+                                                            onClick={() => handleProductRedirect(product)}
+                                                        >
+                                                            {
+                                                                (product?.images?.length > 0 && product?.images[0]?.url) && (
+                                                                    <Image src={`${product?.images[0]?.url || ""}`} alt={`${product?.images[0]?.alt || product?.name}`} width={150} height={150} priority className="mx-auto cursor-pointer" />
+                                                                )
+                                                            }
+                                                        </div>
+                                                        <div className="col-span-9 relative">
+                                                            <p className={styles.product_name} onClick={() => handleProductRedirect(product)}>
+                                                                {product?.name || ""}
+                                                            </p>
+                                                            <p className={styles.product_description} onClick={() => handleProductRedirect(product)}>
+                                                                {product?.description || ""}
+                                                            </p>
+                                                            <p className="py-[2px]">
+                                                                <span className="pr-[5px] text-[22px]">
+                                                                    {getCurrencySymbol(product?.variation?.price?.currency)}
+                                                                </span>
+                                                                <span className="pr-[5px] text-[22px]">
+                                                                    {getDiscountedPrice(product?.variation?.price?.amount, product?.discount)}
+                                                                </span>
+                                                                <span className="line-through text-[16px] text-gray-700">
+                                                                    {product?.variation?.price?.amount}
+                                                                </span>
+                                                            </p>
+                                                            <button onClick={() => handleAddProductToCart(product)} className="text-white bg-[#EA5F28] p-2 rounded-md cursor-pointer flex gap-[5px] flex-nowrap justify-center items-center absolute right-0 bottom-0">
+                                                                {
+                                                                    addingProduct ? (
+                                                                        <div className={loading_styles.loader} />
+                                                                    ) : (
+                                                                        <ShoppingCart size={24} />
+                                                                    )
+                                                                }
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                );
+                                            })
+                                        }
                                     </div>
-                                );
-                            })
+                                    {
+                                        openCart && (
+                                            <Cart openCart={openCart} setOpenCart={setOpenCart} />
+                                        )
+                                    }
+                                </div>
+                            )
                         }
                     </div>
-                    {
-                        openCart && (
-                            <Cart openCart={openCart} setOpenCart={setOpenCart} />
-                        )
-                    }
                 </Box>
             </Modal>
         </Fragment>
