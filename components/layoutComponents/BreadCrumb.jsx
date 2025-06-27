@@ -4,13 +4,11 @@ import React, { useState, useEffect } from "react";
 import styles from "./../../styles/layoutComponents/BreadCrumb.module.css";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { useSearchParams } from 'next/navigation';
 import { Loader } from "lucide-react";
 
 export default function BreadCrumb() {
     const pathname = usePathname();
-    const searchParams = useSearchParams();
-    const pid = searchParams.get('pid');
+    const [pid, setPid] = useState("");
     const [breadCrumb, setBreadCrumb] = useState([]);
     const [productDetails, setProductDetails] = useState({});
     const [productDetailsFetchingStatus, setProductDetailsFetchingStatus] = useState(false);
@@ -19,6 +17,13 @@ export default function BreadCrumb() {
         let temp = decodeURIComponent(item).replace(/-/g, " ");
         return temp?.charAt(0)?.toUpperCase() + temp?.slice(1);
     }
+
+    useEffect(() => {
+        if (window.location.href.includes("?pid=")) {
+            let temp_pid = window.location.href.split("?pid=")[1];
+            setPid(temp_pid);
+        }
+    }, [])
 
     useEffect(() => {
         const handleFetchProductDetails = async () => {
