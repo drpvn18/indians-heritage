@@ -46,32 +46,62 @@ export default function IndianKitchen() {
                         <table>
                             <tbody>
                                 <tr>
-                                    <td>Day</td>
+                                    <td colSpan={2}>Day</td>
                                     <td>Time</td>
                                     <td>Location</td>
                                 </tr>
                                 <tr>
-                                    <td>Monday</td>
+                                    <td rowSpan={2}>Monday</td>
+                                    <td>Day</td>
                                     <td></td>
                                     <td></td>
                                 </tr>
                                 <tr>
-                                    <td>Tuesday</td>
+                                    <td>Night</td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td rowSpan={2}>Tuesday</td>
+                                    <td>Day</td>
                                     <td>11 AM to 3 PM</td>
                                     <td>Schifflange Commune</td>
                                 </tr>
                                 <tr>
-                                    <td>Wednesday</td>
+                                    <td>Night</td>
                                     <td></td>
                                     <td></td>
                                 </tr>
                                 <tr>
-                                    <td>Thursday</td>
+                                    <td rowSpan={2}>Wednesday</td>
+                                    <td>Day</td>
                                     <td></td>
                                     <td></td>
                                 </tr>
                                 <tr>
-                                    <td>Friday</td>
+                                    <td>Night</td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td rowSpan={2}>Thursday</td>
+                                    <td>Day</td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>Night</td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td rowSpan={2}>Friday</td>
+                                    <td>Day</td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>Night</td>
                                     <td></td>
                                     <td></td>
                                 </tr>

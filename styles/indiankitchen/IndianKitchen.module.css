@@ -41,8 +41,12 @@
     min-width: 125px;
 }
 
-.time_table table td:nth-child(2),
-.time_table table td:nth-child(3) {
+.time_table table td:nth-child(2) {
+    text-align: center;
+}
+
+.time_table table td:nth-child(3),
+.time_table table td:nth-child(4) {
     text-align: center;
 }
 
@@ -53,6 +57,11 @@
 .time_table table tr:nth-child(1) td {
     font-size: 18px;
     background-color: var(--main-bg);
+}
+
+.time_table table tr:nth-child(1) td,
+.time_table table tr td:nth-child(1) {
+    text-align: center;
 }
 
 .menu_img {
