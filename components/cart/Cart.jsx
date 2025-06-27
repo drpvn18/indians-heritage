@@ -5,14 +5,12 @@ import Box from '@mui/material/Box';
 import Drawer from '@mui/material/Drawer';
 import { HeartCrack, Minus, Plus, Trash2, Truck, X } from "lucide-react"
 import { LinearProgress } from '@mui/material';
-import { useRouter } from 'next/navigation';
 import Image from 'next/image';
 import styles from "./../../styles/cart/Cart.module.css";
 import Checkout from './Checkout';
 import { CartContext } from '@/app/CartContext';
 
 export default function Cart({ openCart, setOpenCart }) {
-    const router = useRouter();
     const [addingProduct, setAddingProduct] = useState(false);
     const { cartItems, removeFromCart, addProductToCart, getCartCount, updateProductCount } = useContext(CartContext);
     const [openPlaceOrderPopup, setOpenPlaceOrderPopup] = useState(false);
@@ -98,7 +96,11 @@ export default function Cart({ openCart, setOpenCart }) {
     }
 
     const handleProductRedirect = (product) => {
-        router?.push(`/product/${product?.category?.slug}/${product?.slug}`);
+        console.log(product);
+        if (!product?.id)
+            return;
+        window.location.href = `/product/${product?.id}`;
+        return;
     }
 
     const handleCountChange = (product_key, operation) => {
