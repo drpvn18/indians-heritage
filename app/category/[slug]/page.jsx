@@ -35,8 +35,6 @@ export default function ProductCategory({ params }) {
     }
 
     useEffect(() => {
-        const pageTitle = format(slug);
-        console.log(pageTitle);
         document.title = `${format(slug)} - Indian Heritage | Europe's first Indian GI tagged & organic store`;
     }, [])
 

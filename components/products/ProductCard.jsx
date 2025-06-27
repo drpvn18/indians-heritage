@@ -1,5 +1,4 @@
 import Image from "next/image";
-import { useRouter } from "next/navigation";
 import React, { useContext, useState } from "react";
 import styles from "./../../styles/products/ProductCard.module.css"
 import loading_styles from "./../../styles/Loading.module.css";
@@ -9,7 +8,6 @@ import Cart from "../cart/Cart";
 
 export default function ProductCard({ productDetails }) {
     const { addProductToCart } = useContext(CartContext);
-    const router = useRouter();
     const [addingProduct, setAddingProduct] = useState(false);
     const [openCart, setOpenCart] = useState(false);
 
@@ -38,7 +36,7 @@ export default function ProductCard({ productDetails }) {
     const handleProductRedirect = () => {
         if (!productDetails?.id)
             return;
-        router?.push(`/product?pid=${productDetails?.id}`);
+        window.location.href = `/product?pid=${productDetails?.id}`;
     }
 
     const handleAddProductToCart = (product) => {

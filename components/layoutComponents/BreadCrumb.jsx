@@ -7,8 +7,8 @@ import { usePathname } from "next/navigation";
 import { Loader } from "lucide-react";
 
 export default function BreadCrumb() {
-    const pathname = usePathname();
     const [pid, setPid] = useState("");
+    const pathname = usePathname();
     const [breadCrumb, setBreadCrumb] = useState([]);
     const [productDetails, setProductDetails] = useState({});
     const [productDetailsFetchingStatus, setProductDetailsFetchingStatus] = useState(false);
@@ -19,14 +19,7 @@ export default function BreadCrumb() {
     }
 
     useEffect(() => {
-        if (window.location.href.includes("?pid=")) {
-            let temp_pid = window.location.href.split("?pid=")[1];
-            setPid(temp_pid);
-        }
-    }, [])
-
-    useEffect(() => {
-        const handleFetchProductDetails = async () => {
+        const handleFetchProductDetails = async (pid) => {
             setProductDetailsFetchingStatus(true);
             try {
                 const response = await fetch('/api/fetch_products');
@@ -54,8 +47,10 @@ export default function BreadCrumb() {
             }
             setProductDetailsFetchingStatus(false);
         }
-        pid && handleFetchProductDetails();
-    }, [pid])
+        let temp_pid = window.location.href.split("?pid=")[1];
+        temp_pid && setPid(temp_pid);
+        temp_pid && handleFetchProductDetails(temp_pid);
+    }, [])
 
     useEffect(() => {
         const list = pathname?.split("/");
@@ -71,7 +66,7 @@ export default function BreadCrumb() {
                 i++;
                 temp.push({
                     label: format(list[i]),
-                    link: `/category/${list[i]}`,
+                    link: `/product/${list[i]}`,
                     lastPart: false,
                 });
             } else if (list[i] !== "" && list[i] === "category") {
