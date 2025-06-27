@@ -5,14 +5,12 @@ import indianStates from "./../../public/data/indianStates.json";
 import { Loader, MapPin, ShoppingCart, Sparkles } from "lucide-react";
 import styles from "./../../styles/home/ProductsByRegion.module.css";
 import loading_styles from "./../../styles/Loading.module.css";
-import { useRouter } from "next/navigation";
 import { CartContext } from "@/app/CartContext";
 import Image from "next/image";
 import Cart from "../cart/Cart";
 import Link from "next/link";
 
 export default function ProductsByRegion({ stateSelected }) {
-    const router = useRouter();
     const [filteredList, setFilteredList] = useState([]);
     const [filteredProductsCount, setFilteredProductsCount] = useState(0);
     const [isLoading, setIsLoading] = useState(false);
@@ -85,8 +83,7 @@ export default function ProductsByRegion({ stateSelected }) {
     const handleProductRedirect = (product) => {
         if (!product?.id)
             return;
-        router?.push(`/product?pid=${product?.id}`);
-        return;
+        window.location.href = `/product?pid=${product?.id}`;
     }
 
     const getDiscountedPrice = (price, discount) => {
