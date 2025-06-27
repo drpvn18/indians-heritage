@@ -35,7 +35,7 @@ export default function PromotionsCarousel() {
                                     Made in
                                     <img
                                         src="https://flagcdn.com/in.svg"
-                                        alt="Indian Flag"
+                                        alt="Indian"
                                         style={{ width: "1.2em", verticalAlign: "middle" }}
                                     />
                                     products made with ❤️ for Europe
