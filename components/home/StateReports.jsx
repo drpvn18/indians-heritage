@@ -8,7 +8,30 @@ import StateToolTip from "./StateToolTip";
 export default function StateReports() {
     const [stateSelected, setStateSelected] = useState("");
     const stateWiseProductsRef = useRef(null);
+    const indianMapRef = useRef(null);
     const [stateHovered, setStateHovered] = useState("");
+
+    useEffect(() => {
+        const observer = new IntersectionObserver(
+            ([entry]) => {
+                if (!entry.isIntersecting) {
+                    setStateHovered("");
+                }
+            },
+            {
+                threshold: 0.1,
+            }
+        );
+
+        const element = indianMapRef.current;
+        if (element) {
+            observer.observe(element);
+        }
+
+        return () => {
+            if (element) observer.unobserve(element);
+        };
+    }, []);
 
     const scrollToSection = () => {
         stateWiseProductsRef.current?.scrollIntoView({ behavior: "smooth" });
@@ -26,7 +49,7 @@ export default function StateReports() {
                     Explore By State
                 </div>
                 <div className="grid grid-cols-1 sm:grid-cols-2 bg-[#FFFFFF] border-2 border-[#E1F5EB]">
-                    <div className="india-map wow zoomIn p-[10px]" data-wow-delay=".5s" onMouseLeave={() => setStateHovered("")}>
+                    <div ref={indianMapRef} className="india-map wow zoomIn p-[10px]" data-wow-delay=".5s" onMouseLeave={() => setStateHovered("")}>
                         <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" version="1.1" id="svg2" xmlnsXlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 615 680" enableBackground="new 0 0 500 500" xmlSpace="preserve">
                             <AndamanNicobar stateSelected={stateSelected} setStateSelected={setStateSelected} setStateHovered={setStateHovered} stateHovered={stateHovered} />
                             <AndhraPradesh stateSelected={stateSelected} setStateSelected={setStateSelected} setStateHovered={setStateHovered} stateHovered={stateHovered} />

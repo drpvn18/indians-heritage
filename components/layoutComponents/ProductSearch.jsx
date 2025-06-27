@@ -145,7 +145,9 @@ export default function ProductSearch({ openSearchPopup, setOpenSearchPopup }) {
     }
 
     const handleProductRedirect = (product) => {
-        router?.push(`/product/${product?.category?.id}/${product?.slug}`);
+        if (!product?.id)
+            return;
+        router?.push(`/product?pid=${product?.id}`);
         setOpenSearchPopup(false);
         return;
     }

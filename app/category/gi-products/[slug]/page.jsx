@@ -33,7 +33,15 @@ export default function ProductCategory({ params }) {
     const [stateSelected, setStateSelected] = useState(null);
     const [products, setProducts] = useState([]);
 
+    const format = (item) => {
+        let temp = decodeURIComponent(item).replace(/-/g, " ");
+        return temp?.charAt(0)?.toUpperCase() + temp?.slice(1);
+    }
+
     useEffect(() => {
+        const pageTitle = format(slug);
+        document.title = `${pageTitle} | GI products - Indian Heritage | Europe's first Indian GI tagged & organic store`;
+
         const fetchProducts = async () => {
             setLoadingProducts(true);
             try {

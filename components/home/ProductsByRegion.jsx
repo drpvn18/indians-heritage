@@ -83,7 +83,9 @@ export default function ProductsByRegion({ stateSelected }) {
     }
 
     const handleProductRedirect = (product) => {
-        router?.push(`/product/${product?.category?.slug}/${product?.slug}`);
+        if (!product?.id)
+            return;
+        router?.push(`/product?pid=${product?.id}`);
         return;
     }
 

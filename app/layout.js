@@ -10,7 +10,6 @@ import { SpeedInsights } from "@vercel/speed-insights/next"
 import SocialMedia from "@/components/layoutComponents/SocialMedia";
 
 export const metadata = {
-	title: "Indian Heritage | Europe's first Indian GI tagged & organic store",
 	description: "Shop for all Indian GI tagged and organic products in Europe at the best price",
 	icons: {
 		icon: "/title_logo.jpg",

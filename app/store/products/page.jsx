@@ -19,6 +19,10 @@ export default function StoreProducts() {
     const [openSearchPopup, setOpenSearchPopup] = useState(false);
 
     useEffect(() => {
+        document.title = `All Products | Admin store - Indian Heritage | Europe's first Indian GI tagged & organic store`;
+    }, []);
+
+    useEffect(() => {
         const fetchUserDetails = async () => {
             const token = document.cookie.split('; ')?.find(row => row?.startsWith('token='));
 

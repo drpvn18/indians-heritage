@@ -44,6 +44,10 @@ export default function UpdateProduct({ searchParams }) {
     const [logoutStatus, setLogoutStatus] = useState(false);
 
     useEffect(() => {
+        document.title = `${formData?.name ? formData?.name : "update"} | Admin store - Indian Heritage | Europe's first Indian GI tagged & organic store`;
+    }, [formData]);
+
+    useEffect(() => {
         const fetchUserDetails = async () => {
             const token = document.cookie.split('; ')?.find(row => row?.startsWith('token='));
 

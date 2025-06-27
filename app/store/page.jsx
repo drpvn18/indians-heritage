@@ -43,6 +43,10 @@ export default function Store() {
     const [loadingBrands, setLoadingBrands] = useState(false);
 
     useEffect(() => {
+        document.title = `Admin store - Indian Heritage | Europe's first Indian GI tagged & organic store`;
+    }, []);
+
+    useEffect(() => {
         const fetchProducts = async () => {
             setLoadingProducts(true);
             try {

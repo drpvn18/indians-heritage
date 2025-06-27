@@ -26,6 +26,8 @@ export default function ProductCategory() {
     const [products, setProducts] = useState([]);
 
     useEffect(() => {
+        document.title = `Organic products - Indian Heritage | Europe's first Indian GI tagged & organic store`;
+
         const fetchProducts = async () => {
             setLoadingProducts(true);
             try {

@@ -36,7 +36,9 @@ export default function ProductCard({ productDetails }) {
     }
 
     const handleProductRedirect = () => {
-        router?.push(`/product/${productDetails?.category?.id}/${productDetails?.slug}`);
+        if (!productDetails?.id)
+            return;
+        router?.push(`/product?pid=${productDetails?.id}`);
     }
 
     const handleAddProductToCart = (product) => {

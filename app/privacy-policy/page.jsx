@@ -1,4 +1,6 @@
-import React from "react";
+"use client";
+
+import React, { useEffect } from "react";
 import styles from "./../../styles/information/PrivacyPolicy.module.css"
 import Link from "next/link";
 
@@ -261,6 +263,10 @@ const privacyPolicyContent = [
 ]
 
 export default function PrivacyPolicy() {
+    useEffect(() => {
+        document.title = `Privacy Policy - Indian Heritage | Europe's first Indian GI tagged & organic store`;
+    }, []);
+
     return (
         <div className={styles.container} >
             <div className={styles.privacy_policy}>

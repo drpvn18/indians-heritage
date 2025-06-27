@@ -26,6 +26,20 @@ export default function ProductCategory({ params }) {
     const [filteredProductsCount, setFilteredProductsCount] = useState(0);
     const [products, setProducts] = useState([]);
 
+    const format = (item) => {
+        if (item === "all") {
+            return "All products"
+        }
+        let temp = decodeURIComponent(item).replace(/-/g, " ");
+        return temp?.charAt(0)?.toUpperCase() + temp?.slice(1);
+    }
+
+    useEffect(() => {
+        const pageTitle = format(slug);
+        console.log(pageTitle);
+        document.title = `${format(slug)} - Indian Heritage | Europe's first Indian GI tagged & organic store`;
+    }, [])
+
     useEffect(() => {
         const fetchProducts = async () => {
             setLoadingProducts(true);
