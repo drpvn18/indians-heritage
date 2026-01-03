@@ -18,7 +18,7 @@ export default function IndianKitchen() {
                     Discover the <span className={styles.highlighted_part1}>“Indian Kitchen”</span> on wheels! 1st South Indian Food Truck in Luxembourg authentic dishes made with traditional spices and fresh ingredients. From sizzling samosas to rich curries, Hyderabad biryani, every bite brings you closer to India. Fast, flavourful, and freshly cooked with love - perfect for lunch, dinner, or a quick snack. Come find us and enjoy a taste of India, wherever you are!
                 </div>
 
-                <Image className="my-[20px] mx-auto drop-shadow-xl px-[10px] py-[10px] rounded-2xl" src="https://firebasestorage.googleapis.com/v0/b/indiansheriatge.firebasestorage.app/o/indian_kitchen_1.PNG?alt=media&token=c1e611ae-451f-47bd-84fb-6909c2c479c4" alt="food court menu" width={600} height={600} priority />
+                <Image className="my-[20px] mx-auto drop-shadow-xl px-[10px] py-[10px] rounded-2xl" src="https://firebasestorage.googleapis.com/v0/b/indian-heritage-9c91d.firebasestorage.app/o/indian_kitchen_1.PNG?alt=media&token=5ca71baa-e276-437f-998a-b20f935bcdab" alt="food court menu" width={600} height={600} priority />
 
                 <div>
                     <h1 className="w-full bg-[#E2E2E2] text-[28px] text-center py-[5px]">
@@ -30,13 +30,13 @@ export default function IndianKitchen() {
                         </span>
                         From crispy dosas to flavorful curries, biryanis, every item is crafted with authentic taste and love.
                     </div>
-                    <Image className="my-[20px] mx-auto drop-shadow-xl px-[10px] py-[10px] rounded-2xl border-2 border-gray-400" src="https://firebasestorage.googleapis.com/v0/b/indiansheriatge.firebasestorage.app/o/menu-1.PNG?alt=media&token=0caebb60-0cff-441b-81ba-6d3c26eee378" alt="food court menu" width={550} height={550} priority />
+                    <Image className="my-[20px] mx-auto drop-shadow-xl px-[10px] py-[10px] rounded-2xl border-2 border-gray-400" src="https://firebasestorage.googleapis.com/v0/b/indian-heritage-9c91d.firebasestorage.app/o/menu-1.PNG?alt=media&token=244b6ea6-9447-41b8-a5c6-561b6226d5b6" alt="food court menu" width={550} height={550} priority />
 
                     <div className={`${styles.summary_para} text-center`}>
                         Food Allergen : Please refer to our food allergy chart to make informed choices and enjoy your meal with confidence.
                     </div>
 
-                    <Image className="my-[20px] mx-auto drop-shadow-xl px-[10px] py-[10px] rounded-2xl" src="https://firebasestorage.googleapis.com/v0/b/indiansheriatge.firebasestorage.app/o/menu.JPG?alt=media&token=d4aa3024-6cc7-4423-930e-93e5d18116af" alt="food court menu" width={800} height={800} priority />
+                    <Image className="my-[20px] mx-auto drop-shadow-xl px-[10px] py-[10px] rounded-2xl" src="https://firebasestorage.googleapis.com/v0/b/indian-heritage-9c91d.firebasestorage.app/o/menu.JPG?alt=media&token=e93593ee-2eae-4eca-a8f6-8e6c1a09a891" alt="food court menu" width={800} height={800} priority />
                 </div>
                 <div className="my-[30px]">
                     <h1 className="w-full bg-[#E2E2E2] text-[28px] text-center py-[5px]">

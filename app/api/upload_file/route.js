@@ -1,9 +1,7 @@
 export const runtime = 'nodejs';
 
-import { google } from 'googleapis';
-import { Readable } from 'stream';
-
-const DRIVE_FOLDER_ID = '16P5BIRlEShDm5Izh2vSfMBpZQVcWCLi4';
+import { storage } from '@/app/api/utils/firebase_storage';
+import { randomUUID } from 'crypto';
 
 export async function POST(req) {
     try {
@@ -18,58 +16,20 @@ export async function POST(req) {
         }
 
         const buffer = Buffer.from(await file.arrayBuffer());
+        const fileName = `${randomUUID()}-${file.name}`;
 
-        const auth = new google.auth.GoogleAuth({
-            credentials: {
-                type: process.env.GDRIVE_TYPE,
-                project_id: process.env.GDRIVE_PROJECT_ID,
-                private_key_id: process.env.GDRIVE_PRIVATE_KEY_ID,
-                private_key: process.env.GDRIVE_PRIVATE_KEY.replace(/\\n/g, '\n'),
-                client_email: process.env.GDRIVE_CLIENT_EMAIL,
-                client_id: process.env.GDRIVE_CLIENT_ID,
-                auth_uri: process.env.GDRIVE_AUTH_URI,
-                token_uri: process.env.GDRIVE_TOKEN_URI,
-                auth_provider_x509_cert_url: process.env.GDRIVE_AUTH_PROVIDER_CERT_URL,
-                client_x509_cert_url: process.env.GDRIVE_CLIENT_CERT_URL,
-            },
-            scopes: ['https://www.googleapis.com/auth/drive'],
+        const bucket = storage.bucket();
+        const fileRef = bucket.file(`products/${fileName}`);
+
+        await fileRef.save(buffer, {
+            metadata: { contentType: file.type },
         });
 
-        const drive = google.drive({ version: 'v3', auth });
+        await fileRef.makePublic();
 
-        const fileMetaData = {
-            name: file.name,
-            parents: [DRIVE_FOLDER_ID],
-        };
+        const publicUrl = `https://storage.googleapis.com/${bucket.name}/${fileRef.name}`;
 
-        const media = {
-            mimeType: file.type,
-            body: Readable.from(buffer),
-        };
-
-        const response = await drive.files.create({
-            requestBody: fileMetaData,
-            media: media,
-            fields: 'id, webViewLink, webContentLink',
-        });
-
-        await drive.permissions.create({
-            fileId: response.data.id,
-            requestBody: {
-                role: 'reader',
-                type: 'anyone',
-            },
-        });
-
-        const finalFile = await drive.files.get({
-            fileId: response.data.id,
-            fields: 'id, webViewLink, webContentLink',
-        });
-
-        return new Response(JSON.stringify(finalFile.data), {
-            status: 200,
-            headers: { 'Content-Type': 'application/json' },
-        });
+        return new Response(JSON.stringify({ url: publicUrl }), { status: 200 });
     } catch (err) {
         console.error('Upload error:', err);
         return new Response(JSON.stringify({ error: 'Upload failed' }), {

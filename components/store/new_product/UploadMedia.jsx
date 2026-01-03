@@ -22,6 +22,8 @@ export default function UploadMedia({ formData, setFormData }) {
         if (formData?.images && formData?.images?.length > 0 && !file) {
             setProductImages(formData?.images[0])
         }
+
+        console.log(formData);
     }, [formData])
 
     const handleFileChange = (e) => {
@@ -58,7 +60,7 @@ export default function UploadMedia({ formData, setFormData }) {
             setFormData((prev) => ({
                 ...prev,
                 images: [{
-                    url: data?.webContentLink,
+                    url: data?.url,
                     alt: file?.name,
                     mediaType: file?.type,
                 }],

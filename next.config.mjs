@@ -4,7 +4,7 @@ const nextConfig = {
     images: {
         dangerouslyAllowSVG: true,
         contentSecurityPolicy: "default-src 'self'; script-src 'none'; sandbox;",
-        domains: ['drive.google.com', 'firebasestorage.googleapis.com'],
+        domains: ['drive.google.com', 'firebasestorage.googleapis.com', 'storage.googleapis.com'],
     },
 };
 

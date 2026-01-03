@@ -3,7 +3,7 @@
 import React, { useEffect, useState } from "react";
 import dynamic from "next/dynamic";
 import ProductCard from "@/components/products/ProductCard";
-import { useRouter, useSearchParams } from 'next/navigation';
+import { useParams, useRouter, useSearchParams } from 'next/navigation';
 import indianStates from "@/public/data/indianStates.json"
 import { Loader } from "lucide-react";
 
@@ -19,8 +19,8 @@ const filterOptions = [
     { value: 'Discount, high to low', label: 'Discount, high to low' },
 ];
 
-export default function ProductCategory({ params }) {
-    const { slug } = React.use(params);
+export default function ProductCategory() {
+    const { slug } = useParams();
     const router = useRouter();
     const [selectedFilter, setSelectedFilter] = useState({ value: 'Featured', label: 'Featured' });
     const [filteredProducts, setFilteredProducts] = useState([]);
@@ -117,7 +117,7 @@ export default function ProductCategory({ params }) {
     useEffect(() => {
         const handleFilterProducts = async () => {
             try {
-                let state = stateSelected?.value || isValidState(stateParam) ? stateParam : null;
+                let state = stateSelected?.value ?? (isValidState(stateParam) ? stateParam : null);
 
                 let temp = products.filter((item) => item.product_type?.slug === "gi-products");
                 if (state) {

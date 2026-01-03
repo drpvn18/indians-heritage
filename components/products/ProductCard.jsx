@@ -73,7 +73,7 @@ export default function ProductCard({ productDetails }) {
                 <div className="relative mx-auto h-[150px] sm:h-[250px]">
                     {
                         (productDetails?.images?.length > 0 && productDetails?.images[0]?.url) && (
-                            <Image src={`${productDetails?.images[0]?.url}`} alt={`${productDetails?.images[0]?.alt}`} width={150} height={150} priority className="py-[5px] w-[100%] h-[100%]" />
+                            <Image src={`${productDetails?.images[0]?.url}`} alt={`${productDetails?.images[0]?.alt}`} width={150} height={150} priority className="w-[100%] h-[100%]" />
                         )
                     }
                     {

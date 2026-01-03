@@ -4,7 +4,7 @@ import React, { useEffect, useState } from "react";
 import { BadgePlus, Loader, Power, Save, Trash2 } from "lucide-react";
 import { AdditionalInfo, Dimmenssions, GeneralInfo, ManufacturerInfo, PricingStockDetails, TagsField, UploadMedia, CreateNewBrand, CreateNewCategory, CreateNewSubCategory } from "@/components/store/new_product";
 import { Backdrop, Box, Fade, Modal } from "@mui/material";
-import { useRouter } from "next/navigation";
+import { useRouter, useSearchParams } from "next/navigation";
 import ProductDeletionConfirmation from "@/components/store/update_product/ProductDeletionConfirmation";
 import ProductUpdatedPopup from "@/components/store/update_product/ProductUpdatedPopup";
 import Login from "@/components/layoutComponents/Login";
@@ -23,8 +23,10 @@ const style = {
     p: 4,
 };
 
-export default function UpdateProduct({ searchParams }) {
-    const { pid } = React.use(searchParams) || "";
+export default function UpdateProduct() {
+    const searchParams = useSearchParams();
+    const pid = searchParams.get("pid");
+
     const [productKey, setProductKey] = useState("");
     const [formData, setFormData] = useState({});
     const [newCategoryPopup, setNewCategoryPopup] = useState(false);

@@ -49,7 +49,7 @@ export default function FeaturesCarousel() {
                     <div className="embla__container">
                         <div className="embla__slide">
                             <img
-                                src='https://firebasestorage.googleapis.com/v0/b/indiansheriatge.firebasestorage.app/o/slide-3.jpg?alt=media&token=fa13c173-6519-4bb9-90b9-ffbad190ca9c'
+                                src='https://firebasestorage.googleapis.com/v0/b/indian-heritage-9c91d.firebasestorage.app/o/slide-3.jpg?alt=media&token=ca34507e-8c41-4bf3-b75c-7fdd8b25ab8b'
                                 width={300}
                                 height={200}
                                 alt={`Slide 1`}
@@ -60,7 +60,7 @@ export default function FeaturesCarousel() {
                         </div>
                         <div className="embla__slide">
                             <img
-                                src="https://firebasestorage.googleapis.com/v0/b/indiansheriatge.firebasestorage.app/o/slide-4.jpg?alt=media&token=c9531542-0cc2-4ac9-99a6-d5557835d535"
+                                src="https://firebasestorage.googleapis.com/v0/b/indian-heritage-9c91d.firebasestorage.app/o/slide-4.jpg?alt=media&token=bf2434d7-de96-44c0-aa55-962a856dde25"
                                 width={300}
                                 height={200}
                                 alt={`Slide 1`}
